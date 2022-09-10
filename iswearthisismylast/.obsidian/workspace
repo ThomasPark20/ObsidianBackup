@@ -10,7 +10,7 @@
           "type": "diff-view",
           "state": {
             "file": "iswearthisismylast/.obsidian/workspace",
-            "staged": true
+            "staged": false
           }
         }
       },
@@ -18,8 +18,12 @@
         "id": "74c6b35f67204f22",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Zettelkasten/Archetype.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -76,6 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/Archetype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +117,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8796966feff65e93",
+  "active": "48457742834a627d",
   "lastOpenFiles": [
     "Zettelkasten/Archetype.md",
     "Zettelkasten/HTTP Response Status Codes.md",
