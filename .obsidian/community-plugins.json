@@ -1,3 +1,7 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-admonition",
+  "cm-editor-syntax-highlight-obsidian",
+  "sliding-panes-obsidian",
+  "url-into-selection"
 ]

@@ -7,6 +7,17 @@
         "id": "08ab5828545bfec7",
         "type": "leaf",
         "state": {
+          "type": "diff-view",
+          "state": {
+            "file": "iswearthisismylast/.obsidian/appearance.json",
+            "staged": false
+          }
+        }
+      },
+      {
+        "id": "9af2e52ba1ede166",
+        "type": "leaf",
+        "state": {
           "type": "empty",
           "state": {}
         }
@@ -65,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/Archetype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,14 +97,25 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "15da83b01c98b5d9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "08ab5828545bfec7",
-  "lastOpenFiles": []
+  "active": "15da83b01c98b5d9",
+  "lastOpenFiles": [
+    "Zettelkasten/Archetype.md",
+    "Zettelkasten/Burp Suite.md"
+  ]
 }
