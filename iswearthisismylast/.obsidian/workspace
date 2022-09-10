@@ -9,8 +9,8 @@
         "state": {
           "type": "diff-view",
           "state": {
-            "file": "iswearthisismylast/.obsidian/hotkeys.json",
-            "staged": false
+            "file": "iswearthisismylast/.obsidian/workspace",
+            "staged": true
           }
         }
       },
@@ -76,7 +76,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/Archetype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,11 +112,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "1cd612e8e6109f8a",
+  "active": "8796966feff65e93",
   "lastOpenFiles": [
+    "Zettelkasten/Archetype.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/psexec.py.md",
-    "Zettelkasten/Archetype.md",
     "Zettelkasten/Pennyworth.md",
     "Zettelkasten/Reverse Shell.md",
     "Zettelkasten/smbclient.md",
