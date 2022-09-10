@@ -7,12 +7,19 @@
         "id": "8796966feff65e93",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "diff-view",
           "state": {
-            "file": "Zettelkasten/Archetype.md",
-            "mode": "source",
-            "source": false
+            "file": "iswearthisismylast/.obsidian/hotkeys.json",
+            "staged": false
           }
+        }
+      },
+      {
+        "id": "74c6b35f67204f22",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -90,15 +97,23 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "1cd612e8e6109f8a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "8796966feff65e93",
+  "active": "1cd612e8e6109f8a",
   "lastOpenFiles": [
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/psexec.py.md",

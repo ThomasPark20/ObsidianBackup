@@ -15,5 +15,13 @@
       ],
       "key": "V"
     }
+  ],
+  "obsidian-git:open-git-view": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "O"
+    }
   ]
 }
