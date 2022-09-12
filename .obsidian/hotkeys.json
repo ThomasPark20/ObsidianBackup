@@ -6,5 +6,13 @@
       ],
       "key": "O"
     }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
   ]
 }

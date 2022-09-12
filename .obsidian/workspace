@@ -4,21 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "08ab5828545bfec7",
+        "id": "10d75b66d996908f",
         "type": "leaf",
         "state": {
-          "type": "diff-view",
-          "state": {
-            "file": "iswearthisismylast/Zettelkasten/Archetype.md",
-            "staged": false
-          }
-        }
-      },
-      {
-        "id": "9af2e52ba1ede166",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
+          "type": "graph",
           "state": {}
         }
       }
@@ -113,8 +102,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9af2e52ba1ede166",
+  "active": "10d75b66d996908f",
   "lastOpenFiles": [
+    "Zettelkasten/test.md",
+    "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/Archetype.md",
     "Zettelkasten/Burp Suite.md"
   ]
