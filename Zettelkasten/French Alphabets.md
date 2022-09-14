@@ -22,7 +22,7 @@ n = enne = enne (same as above)
 o = o = korean o
 p = pé = peh (singing eh)
 q = qu = keau (think kyrie in elfen lied song 킈 쿠 사이)
-r = er = eherg (에헑 ㅆㅂ) More air
+r = er = eherg (에헑 ㅆㅂ) More air (no nasal, 그냥 헉헉 소리?)
 s = esse = esse (same as l,m,n)
 t = té = teh (singing eh)
 u = u = same u in q... phonetic y becareful to differentiate with e

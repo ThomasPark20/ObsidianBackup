@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#french",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,6 +112,7 @@
   "active": "10d75b66d996908f",
   "lastOpenFiles": [
     "Zettelkasten/French Alphabets.md",
+    "Zettelkasten/French Pronunciation Rules.md",
     "Zettelkasten/test.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/Archetype.md",
