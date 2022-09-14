@@ -7,8 +7,12 @@
         "id": "10d75b66d996908f",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Zettelkasten/French Alphabets.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/French Alphabets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "10d75b66d996908f",
   "lastOpenFiles": [
