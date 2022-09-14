@@ -15,4 +15,9 @@ Normally, e on the end is not pronounced
 
 Mademoisell e
 
+s on the end is not pronounced
+
+h anywhere is not pronounced
+
+
 
