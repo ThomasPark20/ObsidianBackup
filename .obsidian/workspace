@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/French Pronunciation Rules.md",
+            "file": "Zettelkasten/French Alphabets.md",
             "mode": "source",
             "source": false
           }
@@ -54,8 +54,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -71,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/French Pronunciation Rules.md",
+                "file": "Zettelkasten/French Alphabets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,8 +110,8 @@
   },
   "active": "10d75b66d996908f",
   "lastOpenFiles": [
-    "Zettelkasten/French Alphabets.md",
     "Zettelkasten/French Pronunciation Rules.md",
+    "Zettelkasten/French Alphabets.md",
     "Zettelkasten/test.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/Archetype.md",
