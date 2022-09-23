@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/French Alphabets.md",
+            "file": "Zettelkasten/Code Execution on Jenkins.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#french",
+                "query": "tag:#cybersec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/French Alphabets.md",
+                "file": "Zettelkasten/Code Execution on Jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,11 +109,15 @@
   },
   "active": "10d75b66d996908f",
   "lastOpenFiles": [
-    "Zettelkasten/French Pronunciation Rules.md",
-    "Zettelkasten/French Alphabets.md",
-    "Zettelkasten/test.md",
-    "Zettelkasten/HTTP Response Status Codes.md",
-    "Zettelkasten/Archetype.md",
-    "Zettelkasten/Burp Suite.md"
+    "Templates/Books.md",
+    "Templates/Research.md",
+    "Templates/Scratch.md",
+    "Templates/Pages.md",
+    "Zettelkasten/Pennyworth.md",
+    "Zettelkasten/searchsploit.md",
+    "Zettelkasten/PayloadsAllTheThings.md",
+    "Zettelkasten/nmap.md",
+    "Zettelkasten/Tactics.md",
+    "Zettelkasten/smbclient.md"
   ]
 }
