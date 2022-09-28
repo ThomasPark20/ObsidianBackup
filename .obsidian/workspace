@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "10d75b66d996908f",
+        "id": "e1b1e66b085e8541",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/CS 350 Wordlist.md",
+            "file": "Zettelkasten/CS350Lect01.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 346
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS 350 Wordlist.md",
+                "file": "Zettelkasten/CS350Lect01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,13 +107,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "10d75b66d996908f",
+  "active": "e1b1e66b085e8541",
   "lastOpenFiles": [
-    "Zettelkasten/French Alphabets.md",
+    "Templates/Books.md",
     "Zettelkasten/CS 350 Wordlist.md",
+    "Zettelkasten/French Alphabets.md",
     "Zettelkasten/tempraymondtipfrench.md",
     "Zettelkasten/Code Execution on Jenkins.md",
-    "Templates/Books.md",
     "Templates/Research.md",
     "Templates/Scratch.md",
     "Templates/Pages.md",
