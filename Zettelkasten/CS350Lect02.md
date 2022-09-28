@@ -89,6 +89,9 @@ Everything is shared among threads using the same code,
 ==**Thread context**==: the register values that must be saved/restored
 
 ```c
+
+/* From /kern/arch/mips/thread/switch.S*/
+
 /*
 
 * a0 contains the address of the switchframe pointer in the old thread.
@@ -201,9 +204,13 @@ nop /* delay slot for load */
 
 /* and return. */
 
-j ra
+j ra /* cs 241 jr $31 equiv*/
 
 addi sp, sp, 40 /* in delay slot */
 
 .end switchframe_switch
+
 ```
+
+**4 Causes of Context Switch**
+1. calls `thread_yi`
