@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/CS350Lect02.md",
+            "file": "Zettelkasten/CS350 Threads.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350Lect02.md",
+                "file": "Zettelkasten/CS350 Threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,8 +109,8 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
-    "Zettelkasten/CS350Lect01.md",
-    "Zettelkasten/CS350Lect02.md",
+    "Zettelkasten/CS350 Intro to OS.md",
+    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/System Call.md",
     "Zettelkasten/Concurrent.md",
     "Zettelkasten/kernel.md",

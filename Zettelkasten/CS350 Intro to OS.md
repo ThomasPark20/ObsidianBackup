@@ -4,7 +4,7 @@ source: [Waterloo]()
 tags: #pages #CS350 #OS #kernel 
 
 
-# CS350Lect01
+# CS350 Intro to OS
 
 
 ## Overview
