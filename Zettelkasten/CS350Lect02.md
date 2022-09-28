@@ -29,7 +29,7 @@ Benefits include...
 5. ==*Modular code*== (separete UI from Web loading code)
 
 `thread_fork` allows a thread to create new threads
-```
+```c
 int thread_fork(const char *name, struct proc *proc,
 
 void (*func)(void *, unsigned long),
