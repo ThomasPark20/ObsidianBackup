@@ -29,10 +29,19 @@ Benefits include...
 5. ==*Modular code*== (separete UI from Web loading code)
 
 `thread_fork` allows a thread to create new threads
+
 ```c
-int thread_fork(const char *name, struct proc *proc,
+// from kern/include/thread.h
 
-void (*func)(void *, unsigned long),
-
-void *data1, unsigned long data2);
+int thread_fork(
+const char *name, // name of new thread
+struct proc *proc, // thread's process
+void (*func) // new thread's function
+	(void *, unsigned long),
+void *data1, // function's first param
+unsigned long data2); // function's second param
 ```
+
+We can ==*Terminate*== threads by `void thread_exit(void);`
+We can ==*Yield*== threads by `void thread_yield(void);`
+![[Pasted image 20220928180111.png]]
