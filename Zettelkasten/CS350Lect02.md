@@ -28,7 +28,9 @@ Benefits include...
 4. ==*Priority*== can be set to get more processor time for certain events
 5. ==*Modular code*== (separete UI from Web loading code)
 
-`thread_fork` allows a thread to create new threads
+`thread_fork` allows a thread to create new threads **This copies the stack and register values into the newly created thread**
+
+![[ThreadFork.png]]
 
 ```c
 // from kern/include/thread.h
@@ -66,3 +68,11 @@ We can ==*Yield*== threads by `void thread_yield(void);`
 Everything is shared among threads using the same code,
 **EXCEPT STACK + REGISTER CONTENTS**
 
+**Some things that I already understand so skipping**
+
+==**Timesharing**==: Multiple threads take turns on the same hardware; Rapidly switching between threads so all make progress
+
+==**Multicore Processor**==: a single die containing more than one processor unit (parallelism)
+
+==**Multithreading**==: having multiple threads run on the same core
+- special hardware required. (two sets of registers, but others shared like ALU and Data Mem)
