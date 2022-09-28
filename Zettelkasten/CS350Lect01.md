@@ -23,8 +23,9 @@ Introduction to OS.
 	- ==*Manages the hardware resources*== of a computer system.
 	- ==*Allocates resources*== among running progrmas
 	- ==*Controls the access to*== or sharing of resources among programs
-3. **Implementation View
+3. **Implementation View - How is it built?
+	- The OS is.. [[Concurrent]] , [[real-time]] program
 
-
+**How does the OS implement concurr
 
 ## Summary
