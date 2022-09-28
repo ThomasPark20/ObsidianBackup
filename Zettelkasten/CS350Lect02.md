@@ -56,6 +56,13 @@ We can ==*Yield*== threads by `void thread_yield(void);`
 
 ==**Return Values**==: v0. v1. CS241 `jalr` is `jal` here.
 
-==**Saving Registers**==:
-- ==*Caller-save*==, if the calling subroutine has a value in one of these registers that it wants preserved (t0-t7), it stores the value on the stack before calling other subroutine and restores it after.
-- ==*Callee-save*==, if the 
+==**Saving Registers**== - Minimizing situations where the callee is saving unneccessary stuff:
+- ==*Caller-save*==, if the ==calling== subroutine has a value in one of these registers that it wants preserved (t0-t7), it stores the value on the stack before calling other subroutine and restores it after.
+- ==*Callee-save*==, if the ==called== subroutine uses one of these registers (s0-s7) it must first store its current value on the stack and restore it before exiting
+
+**Concurrent Program Execution**
+![[Twothread.png]]
+
+Everything is shared among threads using the same code,
+**EXCEPT STACK + REGISTER CONTENTS**
+
