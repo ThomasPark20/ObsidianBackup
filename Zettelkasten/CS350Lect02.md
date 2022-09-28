@@ -44,4 +44,18 @@ unsigned long data2); // function's second param
 
 We can ==*Terminate*== threads by `void thread_exit(void);`
 We can ==*Yield*== threads by `void thread_yield(void);`
-![[Pasted image 20220928180111.png]]
+
+### Register Definitions
+![[Regdefs.png]]
+
+**Register Usage**
+
+==**Register Names**==: Referred by their default function e.g. v0, a0, t0
+
+==**Passing Arguments**==: Pass first 4 arguments in registers a0-a3 and if more, pass on to stack
+
+==**Return Values**==: v0. v1. CS241 `jalr` is `jal` here.
+
+==**Saving Registers**==:
+- ==*Caller-save*==, if the calling subroutine has a value in one of these registers that it wants preserved (t0-t7), it stores the value on the stack before calling other subroutine and restores it after.
+- ==*Callee-save*==, if the 
