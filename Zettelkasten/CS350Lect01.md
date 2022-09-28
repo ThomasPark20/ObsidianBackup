@@ -1,7 +1,7 @@
 
 2022-09-28 17:04
 source: [Waterloo]()
-tags: #pages #CS350
+tags: #pages #CS350 #OS #kernel 
 
 
 # CS350Lect01
@@ -36,6 +36,3 @@ Introduction to OS.
 - ==*User Space*== are all programs that run outside the kernel (no direct interaction with hardware)
 - ==*[[System Call]]*== how a user process interacts with the OS. A programmer uses the C function `fopen` , which is implemented by making a syscall to the OS (in linux. `sys_open`)
 - ==*Kernel Space*== region of memory where the kernel runs
-
-
-## Summary
