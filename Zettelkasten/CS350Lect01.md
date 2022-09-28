@@ -15,7 +15,7 @@ Introduction to OS.
 ## Details
 
 ### Three views of an OS
-1. **Application View - What services does an OS provide?
+1. **Application View - What services does an OS provide?**
 	- Provides Program with ==*resources*== (processor time, memory space, access to I/O devices like the keyboard and monitor)
 	- Provides Program with ==*interfaces*== (networks, storage, I/O devices, and other system hardware components)
 	- ==*Isolates running programs*== (prevent undesirable interactions)
@@ -26,6 +26,9 @@ Introduction to OS.
 3. **Implementation View - How is it built?
 	- The OS is.. [[Concurrent]] , [[real-time]] program
 
-**How does the OS implement concurr
+**How does the OS implement concurrency and hardware interactions?
+
+==**[[kernel]]:**== Part of the OS that responds to syscalls, interrupts and exceptions
+
 
 ## Summary
