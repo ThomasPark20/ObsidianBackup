@@ -227,3 +227,18 @@ addi sp, sp, 40 /* in delay slot */
 **Thread Stack after Voluntary Context Switch**
 
 ![[ThreadStack.png]]
+
+### **Voluntary vs. Involuntary Context Switches** 
+- When ==calling a subroutine, any of== `fp`, `gp` and `s0-s6`, that will be modified by the callee are stored in a ==stack frame==
+- For a ==voluntary context switch, all of== `ra, fp, gp` and `s0-s6` are saved in a ==switchframe==
+- For an ==INvoluntary context switch, all the registers are saved== in a ==[[trap frame]]== (including `lo, hi, epc` and few other weird ones like `cause` and `status` registers)
+
+References:
+```
+thread_yield() and thread_switch() are in
+/kern/thread/thread.c
+
+switchframe_switch is in /kern/arch/mips/thread/switch.S
+
+trapfram struct in /kern/
+```

@@ -1,6 +1,6 @@
 2022-09-28 20:30
 source: [waterloo]()
-tags: #scratch #CS365 #OS #thread #threads 
+tags: #scratch #CS350 #OS #thread #threads 
 
 #  2022-09-28 8crpmtc8Ppm3
 

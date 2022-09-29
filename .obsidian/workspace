@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/trap frame.md",
+            "file": "Zettelkasten/CS350 Threads.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#scratch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/trap frame.md",
+                "file": "Zettelkasten/CS350 Threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +109,7 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/trap frame.md",
     "Zettelkasten/interrupt.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
@@ -117,7 +118,6 @@
     "Zettelkasten/kernel.md",
     "Zettelkasten/real-time.md",
     "Zettelkasten/Reverse Shell.md",
-    "Templates/Books.md",
-    "Zettelkasten/CS 350 Wordlist.md"
+    "Templates/Books.md"
   ]
 }
