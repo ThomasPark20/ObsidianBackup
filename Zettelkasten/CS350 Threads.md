@@ -217,3 +217,11 @@ addi sp, sp, 40 /* in delay slot */
 2. calls `thread_exit` - is terminated (task complete)
 3. ==blocks== via a call to `wchan_sleep` - waiting for some resource (like network access) or event to happen (like mouse move)
 4. is ==preempted== - involutarily stops running (thread scheduler stopped it)
+
+**Thread States**
+
+![[ThreadStates.png]]
+
+**Thread Stack after Voluntary Context Switch**
+
+![[ThreadStack.png]]
