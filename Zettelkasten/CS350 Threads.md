@@ -247,4 +247,9 @@ trapframe struct in /kern/arch/mips/include/trapframe.h
 
 ![[Threadafterpreemption.png]]
 
-Scheduler -> check quantum -> exceed? yes -> thread_yiel
+Scheduler -> check quantum -> exceed? yes -> thread_yield -> send from running to ==ready queue==.
+
+**OS/161 uses [[Preemptive round-robin]] scheduling**
+
+Check onenote for full step by step process of context switch between 2 threads. (might migrate later... after term)
+

@@ -109,15 +109,15 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/Preemptive round-robin.md",
+    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/trap frame.md",
     "Zettelkasten/interrupt.md",
-    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/System Call.md",
     "Zettelkasten/Concurrent.md",
     "Zettelkasten/kernel.md",
     "Zettelkasten/real-time.md",
-    "Zettelkasten/Reverse Shell.md",
-    "Templates/Books.md"
+    "Zettelkasten/Reverse Shell.md"
   ]
 }
