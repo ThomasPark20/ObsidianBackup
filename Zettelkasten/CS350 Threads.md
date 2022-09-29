@@ -234,11 +234,17 @@ addi sp, sp, 40 /* in delay slot */
 - For an ==INvoluntary context switch, all the registers are saved== in a ==[[trap frame]]== (including `lo, hi, epc` and few other weird ones like `cause` and `status` registers)
 
 References:
-```
+```python
+"""
 thread_yield() and thread_switch() are in
 /kern/thread/thread.c
 
 switchframe_switch is in /kern/arch/mips/thread/switch.S
 
-trapfram struct in /kern/
+trapframe struct in /kern/arch/mips/include/trapframe.h
+"""
 ```
+
+![[Threadafterpreemption.png]]
+
+Scheduler -> check quantum -> exceed? yes -> thread_yiel
