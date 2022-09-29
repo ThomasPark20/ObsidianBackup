@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/A1 Guide.md",
+            "file": "Zettelkasten/9-29CS350.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/A1 Guide.md",
+                "file": "Zettelkasten/9-29CS350.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2da95be997f7e858",
+  "active": "d3026ffb9dd78afb",
   "lastOpenFiles": [
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/Preemptive round-robin.md",
