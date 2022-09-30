@@ -26,3 +26,12 @@ We could try and use **[[volatile]]** keyword, but this is not enough.
 ## locks
 
 A ==**lock**== is a mechanism to provide mutex.
+
+We have many Approaches to achieving locks, but they all follow the same fashion:
+==**test-and-set**==. We test if the lock is held. If held, keep trying to acquire lock. If acquired, exit.
+
+### Approach #1 (x64):
+
+x64 provides an ==**atomic**== (i.e. indivisible or *==uninterruptable==*) test-and-set operation used to implement synchronization primitives such as locks.
+
+we have... `xchg`
