@@ -147,18 +147,25 @@ On Success, we return old value of the lock
 /* return value 0 indiciates lock was acquired*/
 spinlock_data_testandset(volatile spinlock_data_t *sd) {
 	spinlock_data_t x,y;
-	y = 1; // value to store
-	__asm volatile(
-		".set push;"
-		".set mips32;"
-		".set volatile;"
-		"ll %0, 0(%2);"
-		"sc %1, 0(%2);"
-		".set pop"
-		: "=r" (x), "+r" (y) : "r" (sd));
-	if (y == 0) {return 1;}
-	return x;
+	y = 1; // value to store (we try to set true)
+	__asm volatile( // begin asm
+		".set push;" // save assembler mode
+		".set mips32;" // allow MIPS32 instructions
+		".set volatile;" // avoid unwanted optimization (get off my code!!)
+		"ll %0, 0(%2);" // get value of lock x = *sd
+		"sc %1, 0(%2);" // *sd = y; y = success?
+		".set pop" // restore assembler mode
+		: "=r" (x), "+r" (y) : "r" (sd)); // : outputs : inputs :
+	if (y == 0) {return 1;} // if unsuccessful, still locked
+	return x; // if success return lock value
 }
+
+/* Notes: outputs are x (%0) and y (%1) and the input is sd (%2).
+	Switches describe how a value is handled:
+		"=r" means write only, stored in a register.
+		"+r" means read and write, stored in a register.
+		"r" means input, stored in a register.
+*/
 
 ```
 
