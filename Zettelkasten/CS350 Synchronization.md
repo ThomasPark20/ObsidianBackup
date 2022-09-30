@@ -102,7 +102,34 @@ Weird isnt it? `sc` does not care about what ==32-bit== value was store at *addr
 
 ## Spinlocks
 
-So, it was all lies. The above "locks" were actually 
+So, it was all lies. The above "locks" were actually ==**Spinlock**==s
+
+What are **==spinlock**==s? easy. They are above definitions.. they **SPIN(or loop)** until they acquire lock. This process is formally called: ==**busy-wait**==. This *uses the processor while they wait*.
+
+Spinlocks are efficient for short waiting times (a few instructions)
+
+Usage in OS/161
+- updating a shared variable or data structure
+- implementing other synchronization primitive such as ==locks==, ==semaphores== and ==condition variables==
+
+```c
+
+// REF: /kern/include/spinlock.h
+// REF: /kern/arch/mips/includ
+
+struct spinlock {
+	volatile spinlock_data_t lk_lock;
+	struct cpu *lk_holder;
+};
+
+void spinlock_init(struct spinlock *lk);
+void spinlock_acquire(struct spinlock *lk);
+void spinlock_release(struct spinlock *lk);
+
+```
+
+
+
 
 
 ## Locks
