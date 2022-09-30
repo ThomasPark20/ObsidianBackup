@@ -227,5 +227,11 @@ void lock_destroy(struct lock *lk);
 - context switch occurs
 - blocking thread is queued in a ==**wait channel**==
 
+```c
+void wchan_sleep(struct wchan *wc);
+	- blocks calling thread on wait channel wc
+	- causes a context switch, like thread_yield()
+void 
+```
 
 ## Semaphores
