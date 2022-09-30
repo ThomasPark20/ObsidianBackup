@@ -272,22 +272,29 @@ total_sem = sem_create("total mutex", 1); // initial value is 1
 void add() {
 	int i;
 	for (i=0; i<Nl; i++) {
-		P(sem);
+		P(sem); // decrement sem! (now sem is 0)
 		total++;
-		V(sem);
+		V(sem); // increment sem! (now sem is 1)
 	}
 }
 
 void sub() {
 	int i;
 	for (i=0; i<N; i++) {
-		P(sem);
+		P(sem); // decrement sem! (now sem is 0)
 		total--;
-		V(sem);
+		V(sem); // increment sem! (now sem is 1)
 	}
 }
 
+"P(sem) won't go thru unless there is at least 1 resource avail. Thus, mutex!"
 
 ```
+
+#### Producer/Consumer Synchronization with Bounded Buffer
+1. ==**Producers**==: threads that (create and) ==*add*== items to a buffer
+2. **==Consumers==**: thread that *==remove==* (and process) items from the buffer
+
+-
 
 ## Condition variables
