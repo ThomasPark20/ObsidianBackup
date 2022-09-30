@@ -85,4 +85,13 @@ Acquire(bool *lock) { // this also spins until lock obtained
 
 we use two instructions. `ll` and `sc`.
 
-`ll` : load linked. load 
+`ll` : load linked. load value at address *addr*
+`sc` : store conditional. store new value at *addr* if the value at *addr* has not changed since the instruction `ll` was executed (this returns SUCCESS)
+
+Weird isnt it? `sc` does not care about what ==32-bit== value was store at *addr*. It only cares if it changed or not. 
+
+**Even if `sc` returns SUCCESS, the lock can be acquired or not acquired**
+
+![[MIPSlock.png]]
+
+1. `ll` addr was false and stayed false until `sc`. This case, old_val is ``
