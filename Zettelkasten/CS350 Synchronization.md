@@ -370,7 +370,19 @@ V(struct semaphore * sem) {
 ```
 
 #### Example run
-| Thread 1 | 
+| Thread 1 | Thread 2 | Explanation|
+| ---------- | ---------| --------|
+| calls P() | ...| ... |
+| spinlock_acquire | calls v()| ... |
+| sem_count == 0 | spinlock_acquire| Thread 2 tries to get spinlock|
+| wchan_lock | spins| Thread 2 spins and Thread 1 locks wchan|
+| spinlock_release| spins| Thread 1 releases spinlock|
+| wchan_sleep | sem_count++| Thread 2 gets spinlock and releases resource |
+| sleeps| wchan_wakeone| Thread 1 is sleeping, Thread 2 wakes it up |
+|ready | spinlock_release| Thread 1 is ready, Thread 2 releases spinlock |
+
+
+
 
 
 
