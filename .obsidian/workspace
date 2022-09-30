@@ -109,6 +109,7 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/volatile.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/9-29CS350.md",
@@ -117,7 +118,6 @@
     "Zettelkasten/trap frame.md",
     "Zettelkasten/interrupt.md",
     "Zettelkasten/System Call.md",
-    "Zettelkasten/Concurrent.md",
-    "Zettelkasten/kernel.md"
+    "Zettelkasten/Concurrent.md"
   ]
 }
