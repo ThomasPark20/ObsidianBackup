@@ -255,6 +255,11 @@ A ==**Semaphore**== is a synchronization primitive that can be used to enforce m
 2. **counting semaphore**: a semaphore with an arbitrary number of resources
 3. **barrier semaphore**: a semaphore used to force one thread to wait for others to complete; initial count is typically 0
 
-#### Differences between a lock and a semap
+#### Differences between a lock and a semaphore:
+- **Vacate** does not have to follow **Procure**
+- A semaphore can start with a count of 0 (no resources avail)
+- Calling **Vacate** increments the semaphore by 1
+- This sequence of operations forces a thread to wait until resources are produced before continuing
+- Semaphores do not have owners. Locks do.
 
 ## Condition variables
