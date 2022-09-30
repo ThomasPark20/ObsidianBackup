@@ -334,13 +334,25 @@ struct semaphore {
 ```
 
 ```c
-P(struct semaphore * sem) {
-	spinlock_acquire(&sem->sem_lock);
-	while (sem->sem_count == 0) {
-		wchan_lock(sem->sem_wchan);
-		spinlock_release(&sem->sem_lock);
-		wchan_sleep()
-	}
-}
+Ref: kern/thread/synch.c
+
+1. P(struct semaphore * sem) {
+2.	spinlock_acquire(&sem->sem_lock);
+3.	while (sem->sem_count == 0) { // test
+4.		wchan_lock(sem->sem_wchan); // prepare to sleep
+5.		spinlock_release(&sem->sem_lock);
+6.		wchan_sleep(sem->sem_wchan); // sleep
+7.		spinlock_acquire(&sem->sem_lock);
+8.	}
+9.	sem->sem_count--; // set
+10.	spinlock_release(&sem->sem_lock);
+11.}
+
+2. You need to acquire a spinlock to access the semaphore structure
+3. If there are no resources available, (sem_count == 0) time to sleep
+4. Need to modify wait channel, so lock it (4) before releasing the spinlock (5)
+6. Calling wchan_sleep() will release the wchan spinlock for the thread and then the thread goes to sleep. When the thread is woken, wchan_sleep() returns
+7. Another thread may have gotten to the spin lock between the time that you woke up and tried to acquire the lock.
+9. 
 ```
 ## Condition variables
