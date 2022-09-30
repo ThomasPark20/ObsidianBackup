@@ -7,12 +7,8 @@
         "id": "2da95be997f7e858",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Zettelkasten/CS350 Synchronization.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -53,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 194
+    "width": 261
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,9 +103,9 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/CS350 Synchronization.md",
-    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/9-29CS350.md",
     "Zettelkasten/volatile.md",
     "Zettelkasten/Preemptive round-robin.md",
