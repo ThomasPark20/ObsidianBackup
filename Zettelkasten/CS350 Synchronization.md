@@ -34,4 +34,31 @@ We have many Approaches to achieving locks, but they all follow the same fashion
 
 x64 provides an ==**atomic**== (i.e. indivisible or *==uninterruptable==*) test-and-set operation used to implement synchronization primitives such as locks.
 
-we have... `xchg`
+we have... `xchg`. 
+
+```c
+// True, if lock is held. False, if lock was released and we now have the lock.
+xchg(addr, new_value) {
+	old_value = *addr; // load lock value
+	*addr = new_value; // try to set lock value to new_value
+	return(old_value); // return the lock value.
+}
+```
+
+Therefore, utilizing this,
+
+```c
+// so while xchg is true, (lock held by other thread) this continues to SPIN 
+Acquire(bool *lock) {
+	while (xchg(lock,true) == true) {}; // test and set
+}
+
+Release(bool *lock) {
+	*lock = false; // give up lock
+}
+```
+
+This construct is known as a ==**Spinlock**==, since a thread just loops in Acquire() until the lock is free...
+
+### Approach #2 (ARM):
+Rather than a single ``
