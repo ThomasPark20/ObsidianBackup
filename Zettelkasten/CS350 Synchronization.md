@@ -23,7 +23,7 @@ We could try and use **[[volatile]]** keyword, but this is not enough.
 
 ![[Racecondition.png]]
 
-## locks
+## Spinlocks, locks, and semaphores
 
 A ==**lock**== is a mechanism to provide mutex.
 
@@ -94,4 +94,19 @@ Weird isnt it? `sc` does not care about what ==32-bit== value was store at *addr
 
 ![[MIPSlock.png]]
 
-1. `ll` addr was false and stayed false until `sc`. This case, old_val is ``
+1. `ll` addr was false and stayed false until `sc`. This case, old_val is `false` and new_val is `true`. LOCK ACQUIRED
+2. `ll` addr was true and stayed true until `sc`. This case, old_val is `true` thus we keep spinning.
+3. `ll` changed. This means `status == fail` which executes `else return true` thus we keep spinning.
+4. same as 3.
+
+
+## Spinlocks
+
+So, it was all lies. The above "locks" were actually 
+
+
+## Locks
+
+Again, A ==**lock**== is a mechanism to provide mutex.
+
+## Semaphores
