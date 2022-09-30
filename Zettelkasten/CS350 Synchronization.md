@@ -348,11 +348,25 @@ Ref: kern/thread/synch.c
 10.	spinlock_release(&sem->sem_lock);
 11.}
 
-2. You need to acquire a spinlock to access the semaphore structure
-3. If there are no resources available, (sem_count == 0) time to sleep
-4. Need to modify wait channel, so lock it (4) before releasing the spinlock (5)
-6. Calling wchan_sleep() will release the wchan spinlock for the thread and then the thread goes to sleep. When the thread is woken, wchan_sleep() returns
-7. Another thread may have gotten to the spin lock between the time that you woke up and tried to acquire the lock.
-9. 
+2. "You need to acquire a spinlock to access the semaphore structure"
+3. "If there are no resources available, (sem_count == 0) time to sleep"
+4. "Need to modify wait channel, so lock it (4) before releasing the spinlock (5)
+6. "Calling" wchan_sleep() "will release the wchan spinlock for the thread and then the thread goes to sleep. When the thread is woken," wchan_sleep() "returns"
+7. "Another thread may have gotten to the spin lock between the time that you woke up and tried to acquire the lock.
+9. "If you've broken out of the while-loop, you have the lock and sem_count is greater than 0, so claim an item.
 ```
+
+```c
+Ref: kern/thread/synch.c
+
+V(struct semaphore * sem) {
+	spinlock_acquire(&sem->sem_lock);
+	sem->sem_count++;
+	wchan_wakeone(sem->sem_wchan);
+	spinlock_release(&sem->sem_lock);
+}
+
+"Acquire the lock, increase the count, wake up the first thread (if any) sleeping on the semaphore's wait channel"
+```
+
 ## Condition variables
