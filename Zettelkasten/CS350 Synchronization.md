@@ -129,6 +129,14 @@ void spinlock_release(struct spinlock *lk);
 
 // spinlock_acquire calls spinlock_data_testandset in a loop until the lock is acquired.
 
+// function definitions
+
+void spinlock_init(struct spinlock *lk);
+void spinlock_acquire(struct spinlock *lk);
+void spinlock_release(struct spinlock *lk);
+bool spinlock_do_i_hold(struct spinlock *lk);
+void spinlock_cleanup(struct spinlock *lk);
+
 ```
 
 
@@ -182,7 +190,14 @@ lock_acquire(mylock);
 // critical section
 lock_release(mylock);
 
-// other functions
+// function definitions
+
+struct lock *lock_create(const char *name);
+void lock_acquire(struct lock *lk);
+void lock_release(struct lock *lk);
+bool lock_do_i_hold(struct lock *lk);
+void lock_destroy(struct lock *lk);
+
 ```
 
 ***locks can be used to protect larger critical sections without being a burden on the processor***
@@ -198,6 +213,9 @@ lock_release(mylock);
 	- spinlock - *CPU*
 	- lock - *thread*
 	
+
+#### So what is thread ==**blocking?**==
+
 
 
 ## Semaphores
