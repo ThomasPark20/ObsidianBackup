@@ -231,7 +231,20 @@ void lock_destroy(struct lock *lk);
 void wchan_sleep(struct wchan *wc);
 	- blocks calling thread on wait channel wc
 	- causes a context switch, like thread_yield()
-void 
+void wchan_wakeall(struct wchan *wc);
+	- unblock all threads sleeping on wait channel wc
+void wchan_wakeone(struct wchan *wc);
+	- unblock one thread sleeping on wait channel wc
+void wchan_lock(struct wchan *wc);
+	- prevent operations on wait channel wc
+
+
+// wait channels are implemented with queues
 ```
 
+
 ## Semaphores
+
+A ==**Semaphore**== is a synchronization primitive that can be used to enforce mutex and also other kinds of synchro problems.
+
+## Condition variables
