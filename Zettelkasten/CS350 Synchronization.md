@@ -307,15 +307,40 @@ Spaces = sem_create("Buffer Spaces", N); // initially = N
 Bianry = sem_create("Binary Mutex", 1); // initally = 1
 
 // Producer's pseudo-code:
-	P(Binary); // mutex. If this is 1, producer happens. if this is 0, we wait until consume is over.
+	P(Binary); // mutex. If this is 1, continue (decrement 1). if this is 0, we wait until other function is over (race-condition avoided).
 	P(Spaces); // block if there is no space in buffer
 	add item to the buffer
 	V(Items); // increase the number of items available
-	V(binary); // release mutex (increment by 1)
+	V(Binary); // release mutex (increment by 1)
 
-// Consumer's Pseudo-code
+// Consumer's Pseudo-code:
+	P(Binary); // mutex. If this is 1, continue (decrement 1). if this is 0, we wait until other function is over (race-condition avoided).
+	P(Items); // block if there are no itesm to consume
+	remove item from buffer
+	V(Spaces); // increase the amount of buffer space available
+	V(Binary); // release mutex (increment by 1)
 ```
 
+#### Semaphore Implementation
+```c
+Ref: kern/include/synch.h
 
+struct semaphore {
+	char *sem_name; // for debug purposes
+	struct wchan *sem_wchan*; // queue where threads wait
+	struct spinlock sem_lock; // to synch access to this struct
+	volatile int sem_count; // value of the semaphore
+}
+```
 
+```c
+P(struct semaphore * sem) {
+	spinlock_acquire(&sem->sem_lock);
+	while (sem->sem_count == 0) {
+		wchan_lock(sem->sem_wchan);
+		spinlock_release(&sem->sem_lock);
+		wchan_sleep()
+	}
+}
+```
 ## Condition variables
