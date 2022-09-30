@@ -173,4 +173,31 @@ spinlock_data_testandset(volatile spinlock_data_t *sd) {
 
 Again, A ==**lock**== is a mechanism to provide mutex.
 
+Unlike spinlocks however, it ==**blocks**==
+
+```c
+struct lock *mylock = lock_create("LockName");
+
+lock_acquire(mylock);
+// critical section
+lock_release(mylock);
+
+// other functions
+```
+
+***locks can be used to protect larger critical sections without being a burden on the processor***
+
+#### Spinny boi vs lockky boi
+
+**For both**
+- thread would acquire, release
+- must be initialized or created before using them
+- have funtion `do_i_hold` it?
+- have *owners* and can only be released by their owner.
+	- why? in OS/161 and modern OSs, interrupts are disabled on the CPU that holds the spinlock but not other CPUs to minimize spinning
+	- spinlock - *CPU*
+	- lock - *thread*
+	
+
+
 ## Semaphores
