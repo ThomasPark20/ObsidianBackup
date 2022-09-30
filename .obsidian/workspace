@@ -7,8 +7,12 @@
         "id": "2da95be997f7e858",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Zettelkasten/CS350 Synchronization.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -49,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261
+    "width": 261,
+    "collapsed": true
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -65,6 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/CS350 Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
