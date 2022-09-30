@@ -19,3 +19,4 @@ We try to enforce ==**mutual exclusion (also refered to as mutex)**== to mitigat
 
 We could try and use **[[volatile]]** keyword, but this is not enough. 
 
+![[Racecondition.png]]
