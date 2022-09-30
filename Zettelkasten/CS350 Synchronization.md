@@ -295,6 +295,27 @@ void sub() {
 1. ==**Producers**==: threads that (create and) ==*add*== items to a buffer
 2. **==Consumers==**: thread that *==remove==* (and process) items from the buffer
 
--
+**We use semaphores to provide the necessary synchronization for**...
+1. ensure consumers don't consume if buffer is empty (wait until at least one in buffer)
+2. if buffer has limited capacity, ensure producers wait if buffer is full
+
+```c
+
+struct semaphore *Itmes, *Spaces, *Binary;
+Items = sem_create("Buffer Items", 0); // initially = 0
+Spaces = sem_create("Buffer Spaces", N); // initially = N
+Bianry = sem_create("Binary Mutex", 1); // initally = 1
+
+// Producer's pseudo-code:
+	P(Binary); // mutex. If this is 1, producer happens. if this is 0, we wait until consume is over.
+	P(Spaces); // block if there is no space in buffer
+	add item to the buffer
+	V(Items); // increase the number of items available
+	V(binary); // release mutex (increment by 1)
+
+// Consumer's Pseudo-code
+```
+
+
 
 ## Condition variables
