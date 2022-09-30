@@ -138,8 +138,29 @@ Welcome back to MIPS.. I mean OS/161. We also use `ll` and `sc` to implement `sp
 
 `ll` loads data from `sd` (spinlock data) into `x`, and uses `y` to store 1 (true, or means locked).
 
-As always, on failure (lock is held by other thread), 
+As always, on failure (lock is held by other thread), return 1 (true). 
+On Success, we return old value of the lock
+- If old value was 0 -> lock has been acquired (return false to exit)
+- If old value was 1 -> lock is still held by another thread. (return true to spin)
 
+```c
+/* return value 0 indiciates lock was acquired*/
+spinlock_data_testandset(volatile spinlock_data_t *sd) {
+	spinlock_data_t x,y;
+	y = 1; // value to store
+	__asm volatile(
+		".set push;"
+		".set mips32;"
+		".set volatile;"
+		"ll %0, 0(%2);"
+		"sc %1, 0(%2);"
+		".set pop"
+		: "=r" (x), "+r" (y) : "r" (sd));
+	if (y == 0) {return 1;}
+	return x;
+}
+
+```
 
 ## Locks
 
