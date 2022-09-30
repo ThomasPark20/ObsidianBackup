@@ -262,4 +262,32 @@ A ==**Semaphore**== is a synchronization primitive that can be used to enforce m
 - This sequence of operations forces a thread to wait until resources are produced before continuing
 - Semaphores do not have owners. Locks do.
 
+#### Mutex using a semaphore
+
+```c
+volatile int total = 0;
+struct semaphore *total_sem;
+total_sem = sem_create("total mutex", 1); // initial value is 1
+
+void add() {
+	int i;
+	for (i=0; i<Nl; i++) {
+		P(sem);
+		total++;
+		V(sem);
+	}
+}
+
+void sub() {
+	int i;
+	for (i=0; i<N; i++) {
+		P(sem);
+		total--;
+		V(sem);
+	}
+}
+
+
+```
+
 ## Condition variables
