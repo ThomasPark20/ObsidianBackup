@@ -382,8 +382,4 @@ V(struct semaphore * sem) {
 |ready | spinlock_release| Thread 1 is ready, Thread 2 releases spinlock |
 
 
-
-
-
-
 ## Condition variables
