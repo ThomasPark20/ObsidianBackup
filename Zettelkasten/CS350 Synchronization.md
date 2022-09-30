@@ -61,4 +61,28 @@ Release(bool *lock) {
 This construct is known as a ==**Spinlock**==, since a thread just loops in Acquire() until the lock is free...
 
 ### Approach #2 (ARM):
-Rather than a single ``
+Rather than a single `xchg`, ARM provides a *pair of instructions*. 
+
+`LDREX` (load register exclusive) and `STREX` (store register exclusive). They are a pair, meant to be used ==together==. (reasonably close.. specifically within 128 bits)
+
+```c
+ARMTestAndSet(addr, new_val) {
+	old_val = LDREX addr // load old value
+	status = STREX new_val, addr // try store new value
+	if (status == SUCCEED) return old_val // if succeeded, old_val would be false!
+	else return true // lock is being held by other thread
+}
+
+// utilizing this,
+
+Acquire(bool *lock) { // this also spins until lock obtained
+	while(ARMTestAndSet(lock, true) == true) {};
+}
+
+```
+
+### Approach 3 (MIPS):
+
+we use two instructions. `ll` and `sc`.
+
+`ll` : load linked. load 
