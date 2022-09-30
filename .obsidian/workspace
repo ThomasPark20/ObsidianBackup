@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/9-29CS350.md",
+            "file": "Zettelkasten/CS350 Synchronization.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 155
+    "width": 194
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/9-29CS350.md",
+                "file": "Zettelkasten/CS350 Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d3026ffb9dd78afb",
+  "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/CS350 Synchronization.md",
+    "Zettelkasten/CS350 Intro to OS.md",
+    "Zettelkasten/9-29CS350.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/Preemptive round-robin.md",
     "Zettelkasten/trap frame.md",
     "Zettelkasten/interrupt.md",
-    "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/System Call.md",
     "Zettelkasten/Concurrent.md",
-    "Zettelkasten/kernel.md",
-    "Zettelkasten/real-time.md",
-    "Zettelkasten/Reverse Shell.md"
+    "Zettelkasten/kernel.md"
   ]
 }
