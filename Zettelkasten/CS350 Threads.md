@@ -19,7 +19,7 @@ A single program however, can have
  - ==*Different threads responsible for different roles*== (web browsers)
  - ==*Multiple threads responsible for the same roles*== (my tool at AWN)
 
-Why Threads? [[Concurrent]] ! (This is different but includes Parallelism which is strictly hardware and is actually working at the same time using multiple cores)
+Why Threads? [[Concurrent]]! (This is different but includes Parallelism which is strictly hardware and is actually working at the same time using multiple cores)
 
 Benefits include...
 1. ==*Efficient Use of Resources*==

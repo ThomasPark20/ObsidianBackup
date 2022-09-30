@@ -115,7 +115,7 @@ Usage in OS/161
 ```c
 
 // REF: /kern/include/spinlock.h
-// REF: /kern/arch/mips/includ
+// REF: /kern/arch/mips/include/spinlock.h
 
 struct spinlock {
 	volatile spinlock_data_t lk_lock;
@@ -126,10 +126,19 @@ void spinlock_init(struct spinlock *lk);
 void spinlock_acquire(struct spinlock *lk);
 void spinlock_release(struct spinlock *lk);
 
+
+// spinlock_acquire calls spinlock_data_testandset in a loop until the lock is acquired.
+
 ```
 
 
+Again, **spinlock_acquire() calls spinlock_data_testandset() in a loop until the lock is acquired.**
 
+Welcome back to MIPS.. I mean OS/161. We also use `ll` and `sc` to implement `spinlock_data_testandset()`
+
+`ll` loads data from `sd` (spinlock data) into `x`, and uses `y` to store 1 (true, or means locked).
+
+As always, on failure (lock is held by other thread), 
 
 
 ## Locks
