@@ -216,6 +216,16 @@ void lock_destroy(struct lock *lk);
 
 #### So what is thread ==**blocking?**==
 
+- Sometimes a thread will need to wait..
+	- wait for lock to be released by another thread
+	- wait for data from a slow device
+	- wait for input from a keyboard
+	- etc
+
+==**when a thread blocks, it stops running**==, i.e. does not use the CPU.
+- The scheduler chooses new thread to run
+- context switch occurs
+- blocking thread is queued in a ==**wait channel**==
 
 
 ## Semaphores
