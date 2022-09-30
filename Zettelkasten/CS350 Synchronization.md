@@ -245,6 +245,16 @@ void wchan_lock(struct wchan *wc);
 
 ## Semaphores
 
-A ==**Semaphore**== is a synchronization primitive that can be used to enforce mutex and also other kinds of synchro problems.
+A ==**Semaphore**== is a synchronization primitive that can be used to enforce mutex and also other kinds of synchro problems. It has an ==*integer*== value that supports two ==*atomic*== operations:
+- **P ( Procure )**: if the semaphore value is greater than 0, decrement it.
+	- Otherwise, wait until value is > 0 and then decrement it.
+- **V ( Vacate )**: increment the value of the semaphore
+
+#### 3 types of semaphores:
+1. **binary semaphore**: a semaphore with a single resource; behaves like a lock, but does not track ownership
+2. **counting semaphore**: a semaphore with an arbitrary number of resources
+3. **barrier semaphore**: a semaphore used to force one thread to wait for others to complete; initial count is typically 0
+
+#### Differences between a lock and a semap
 
 ## Condition variables
