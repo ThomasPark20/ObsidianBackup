@@ -449,3 +449,25 @@ itemType Consume() {
 }
 ```
 
+
+
+## Deadlocks (sounds cool but bad)
+
+Imagine if...
+- Thread 1 executes lock_acquire(lock1) and holds it.
+- Thread 2 executes lock_acquire(lock2) and holds it.
+- Thread 1 executes lock_acquire(lock1) and blocks because lock2 is held by Thread 2
+- Thread 2 executes lock_acquire(lock1) and blocks because lock1 is held by Thread 1
+
+The threads are ==**deadlocked**==, i.e. neither can make progress. They are ==*PERMANENTLY BLOCKED*==
+
+#### Deadlock Prevention
+1. ==**No Hold and Wait**==: *prevent a thread from requesting resources if it currently has resources allocated to it*.... A thread may hold several resources, but must obtain them all at once. 
+```c
+lock_acquire(lock1); // try get both locks
+while(!try_acquire(lock2)) {
+	lock_release(lock1); // didn't get lock2 so try again
+	lock_acquire(lock1);
+} // if exit, both resources obtained.
+```
+2. ==**Resource Ordering**==: *Order (i.e., number) the resource types*  
