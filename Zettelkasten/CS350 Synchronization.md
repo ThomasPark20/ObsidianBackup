@@ -384,4 +384,23 @@ V(struct semaphore * sem) {
 
 ## Condition variables
 
-**condition va
+**condition variable is intended to work together with a lock.** 
+**It is only used within the critical section that is protected by the lock.**
+
+**Condition variable allows threads to wait for arbitrary conditions to become true inside of a critical section**
+
+#### Operations:
+1. ==**wait**==: Causes calling thread to ==*block*==, and releases the lock associated with the condition variable. Once the thread is unblocked, it ==*reacquires*== the lock.
+2. ==**signal**==: If threads are blocked on the signaled condition variable, then ==*one*== of those threads ==*is unblocked*==
+3. ==**broadcast**==: LIke signal, but unblocks ==*ALL*== threads that are blocked on the condition variable.
+
+
+#### Example:
+
+```c
+int volatile numberOfGeese = 100;
+lock geeseMutex;
+cv zeroGeese;
+
+int SafeToWalk
+```
