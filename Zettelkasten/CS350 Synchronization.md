@@ -462,7 +462,7 @@ Imagine if...
 The threads are ==**deadlocked**==, i.e. neither can make progress. They are ==*PERMANENTLY BLOCKED*==
 
 #### Deadlock Prevention
-1. ==**No Hold and Wait**==: *prevent a thread from requesting resources if it currently has resources allocated to it*.... A thread may hold several resources, but must obtain them all at once. 
+1. ==**No Hold and Wait**==: ==*prevent a thread from requesting resources== if it currently has resources allocated to it*.... A thread may hold several resources, but must obtain them all at once. 
 ```c
 lock_acquire(lock1); // try get both locks
 while(!try_acquire(lock2)) {
@@ -470,4 +470,8 @@ while(!try_acquire(lock2)) {
 	lock_acquire(lock1);
 } // if exit, both resources obtained.
 ```
-2. ==**Resource Ordering**==: *Order (i.e., number) the resource types*  
+2. ==**Resource Ordering**==: ==*Order (i.e., number) the resource types*== and require that each thread acquire resources in increasing resource type order. That is, a thread may make no requests for resources of type less than or equal to *i* if it is holding resources of type *i*. 
+
+## Summary
+
+![[CS350synchro1.png]]![[CS350synchro2.png]]![[CS350synchro3.png]]![[CS350synchro4.png]]
