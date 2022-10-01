@@ -395,12 +395,29 @@ V(struct semaphore * sem) {
 3. ==**broadcast**==: LIke signal, but unblocks ==*ALL*== threads that are blocked on the condition variable.
 
 
-#### Example:
+#### Example 1:
 
 ```c
 int volatile numberOfGeese = 100;
 lock geeseMutex;
 cv zeroGeese;
 
-int SafeToWalk
+int SafeToWalk() {
+	lock_acquire(geeseMutex);
+	while (numberOfGeese > 0) {
+		cv_wait(zeroGeese, geeseMutex);
+	}
+	GoToClass();
+	lock_release(geeseMutex);
+}
+
+// cv_wait() will handle releasing and reacquiring the lock passed in.
+// It will put the calling thread in the cv's wait channel to block.
+// cv_signal() and cv_broadcast() wake threads waiting on the cv.
+```
+
+
+#### Example 2:
+```
+int volatile count = 0; // must be 0 i
 ```
