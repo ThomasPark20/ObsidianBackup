@@ -418,6 +418,28 @@ int SafeToWalk() {
 
 
 #### Example 2:
-```
-int volatile count = 0; // must be 0 i
+```c
+int volatile count = 0; // must be 0 initially
+struct lock *mutex; // for mutual exclusion
+struct cv *notfull, *notempty; // condition variables
+
+/* Note: the lock and cv's must be created using lock_create() and cv_create() before Produce() and Consume() are called */
+
+Produce(itemType item) {
+	lock_acquire(mutex);
+	while (count == N) {
+		cv_wait(notfull, mutex); // wait until buffer is not full
+	}
+	add_item(item, buffer); // add item to buffer
+	count = count + 1;
+	cv_signal(notempty, mutex); // signal that buffer is not empty
+	lock_release(mutex);
+}
+
+itemType Consume() {
+	lock_acquire(mutex);
+	while (count == 0) {
+		cv_wait(notempty, mutex)	
+	}
+}
 ```
