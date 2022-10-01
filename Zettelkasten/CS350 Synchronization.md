@@ -439,7 +439,13 @@ Produce(itemType item) {
 itemType Consume() {
 	lock_acquire(mutex);
 	while (count == 0) {
-		cv_wait(notempty, mutex)	
+		cv_wait(notempty, mutex); // wait until buffer is not empty
 	}
+	item = remove_item(buffer); // remove item from buffer
+	count = count - 1;
+	cv_signal(notfull, mutex); // signal that buffer is not full
+	lock_release(mutex);
+	return(item);
 }
 ```
+

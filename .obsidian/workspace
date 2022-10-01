@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/CS350 Synchronization.md",
+            "file": "Zettelkasten/volatile.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "volatile",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,12 +49,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 261,
-    "collapsed": true
+    "width": 261
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Synchronization.md",
+                "file": "Zettelkasten/volatile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,8 +110,8 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
-    "Zettelkasten/9-29CS350.md",
     "Zettelkasten/CS350 Synchronization.md",
+    "Zettelkasten/9-29CS350.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/volatile.md",
