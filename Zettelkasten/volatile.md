@@ -12,10 +12,6 @@ tags: #scratch
 - Without volatile, variables may be saved on multiple registers if multiple functions reference it.
 - which has the correct variable then???
 
+**volatile disables this optimization. forcing the values to be loaded from and stored to memory with each use**
 
-
-C keyword ex. volatile int x
-which tells the compiler to strictly load and store the value on every use, rather than storing the value in a register.
-
-This makes sure the value isn't lost due to other computations on the register.
 
