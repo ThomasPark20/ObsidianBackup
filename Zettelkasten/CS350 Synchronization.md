@@ -384,3 +384,4 @@ V(struct semaphore * sem) {
 
 ## Condition variables
 
+**condition va
