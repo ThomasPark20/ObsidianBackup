@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zettelkasten/CS350 Processeses.md",
+            "file": "Zettelkasten/CS350 Synchronization.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261
+    "width": 261,
+    "collapsed": true
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Processeses.md",
+                "file": "Zettelkasten/CS350 Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,10 +110,10 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
-    "Zettelkasten/CS350 Synchronization.md",
-    "Zettelkasten/CS350 Processeses.md",
-    "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/CS350 Threads.md",
+    "Zettelkasten/CS350 Intro to OS.md",
+    "Zettelkasten/CS350 Processeses.md",
+    "Zettelkasten/CS350 Synchronization.md",
     "Files/CS350synchro1.png",
     "Zettelkasten/volatile.md",
     "Zettelkasten/9-29CS350.md",
