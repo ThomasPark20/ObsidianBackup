@@ -30,7 +30,7 @@ Processes are ==created and managed by the kernel==
 ![[Processfunction.png]]
 
 
-### Fork
+### fork
 - creates new process ==**child**==, ==*that is a clone*== of the ==**parent**==.
 	- copies P's address space (==code, globals, heap, stack==) in to C's
 	- makes a new thread for C
@@ -40,4 +40,15 @@ Processes are ==created and managed by the kernel==
 		- C = 0
 		- P = C's pid
 
-#### _exit
+### \_exit
+- terminates the process that calls it
+	- process that dies can supply an exit status code
+	- kernel records the exit status in case another process wants to hear it
+
+### waitpid
+- lets a process wait (block) for another to terminate (\_exit's exit status code thingy)
+
+### getpid
+- returns the ==process identifier== of the current process
+- each existing process has its own unique pid
+- 
