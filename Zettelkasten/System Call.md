@@ -1,6 +1,6 @@
 2022-09-28 17:31
 source : [source]()
-tags: #tips 
+tags: #tips #syscall #cybersec #pwn #CS350 #process #processes 
 
 # System Call
 
@@ -9,9 +9,8 @@ tags: #tips
 - interface between user process and the kernel
 - various languages have their own system call library for using OS services
 
-
 ## When
-
+- When user processes want to say hi to the kernel
 
 ## How
 
@@ -30,3 +29,13 @@ tags: #tips
 - ==conditions== (not necessarily errors) ==that occur during the execution of a program instruction== 
 	- e.g. overflow, illegal instructions, illegal address, page faults, system calls.
 - Same as interrupts, sent to a specific ==**exception handler**==
+
+In both cases, processor stores the cause of this in the *cause* register. Both handlers use this code to determine what happened.
+
+### System Call Software Stack (OS/161 MIPS)
+
+1. The *application* calls a library wrapper function for the sytem call.
+2. The *library function* executes a ==syscall== instruction causing...
+3. ... the kernel's *exception handler* to run. (MIPS uses same routine for both interrupts and exceptions so everything goes to the exception handler)
+	1. creates trap frame to save application program state
+	2. determines that this is a s
