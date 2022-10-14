@@ -15,14 +15,29 @@ Syscalls in CS350 and how they are implemented
 ## Details
 
 
-### Process - an ==environment in which application program runs== 
+### Process - an ==environment in which application program runs in isolation== 
 Process contains...
 - ==Threads== to execute code on processors
-- ==address space== for code and data
+- ==address space== for code and data (VMEM)
 - a file system
 - I/O: Keyboard, display, etc
 
 Processes are ==created and managed by the kernel==
 
 
+#### Variety of functions ([[System Call]]) regarding Processes
 
+![[Processfunction.png]]
+
+
+### Fork
+- creates new process ==**child**==, ==*that is a clone*== of the ==**parent**==.
+	- copies P's address space (==code, globals, heap, stack==) in to C's
+	- makes a new thread for C
+	- copies P's ==trap frame== to the C's kernel stack
+	- ==address space is identical at the time of fork, though it may diverge afterwards==
+	- different return values
+		- C = 0
+		- P = C's pid
+
+#### _exit
