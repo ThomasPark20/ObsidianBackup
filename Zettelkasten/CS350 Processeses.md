@@ -73,4 +73,17 @@ Processes are ==created and managed by the kernel==
 - used while the thread is executing kernel code
 - located in kernel space
 - OS/161, the ==t_stack== field of the ==thread== structure points to this stack
-- 
+- holds stack frames (activation records) for the kernel functions
+- holds *trap frames* and *switch frames* (as ==it is the kernel that creates trap frames and switch frames==)
+
+For diagram, check lecture 9 notes
+
+### IPC: Inter-Process Communication
+- family of methods used to *send data between processes*
+
+- **File**: data to be shared is written to a file, accessed by both processes.
+- **Socket**: data is sent via network interface between processes
+- **Pipe**: data is sent, unidirectionally, from one process to another via OS-managed data buffer.
+- **Shared Memory**: data is sent via block of shared memory visible to both processes.
+- **Message Passing/Queue**: a queue/data stream provided by the OS to send data between processes.
+
