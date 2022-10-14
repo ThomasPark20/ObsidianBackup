@@ -60,3 +60,17 @@ Processes are ==created and managed by the kernel==
 - can pass arguments to the new program, if required
 - new program starts executing after execv
 
+### [[System Call]] 
+
+### Stacks
+
+#### User Stack
+ - used while the thread is executing application code
+ - our usual stack in user space
+ - holds stack frames (activation records)
+
+#### Kernel Stack
+- used while the thread is executing kernel code
+- located in kernel space
+- OS/161, the ==t_stack== field of the ==thread== structure points to this stack
+- 
