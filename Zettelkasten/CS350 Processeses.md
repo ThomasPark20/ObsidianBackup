@@ -51,4 +51,12 @@ Processes are ==created and managed by the kernel==
 ### getpid
 - returns the ==process identifier== of the current process
 - each existing process has its own unique pid
-- 
+
+### execv
+- changes the program that a process is running
+- ==calling process's VMEM is destroyed==
+	- Thus process gets new VMEM (code, heap, stack, etc) initialized with code and data of the new program to run.
+- ==pid remains the same==
+- can pass arguments to the new program, if required
+- new program starts executing after execv
+
