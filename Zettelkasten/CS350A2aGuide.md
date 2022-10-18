@@ -30,8 +30,11 @@ create and copy address space (already a function to help exists)
 attach/set child's address space
 	give unique PID and PID>0 (as 0 is what is returned in child code thingy in lecture notes)
 		can assume max of 64 PIDs needed and just have a global counter that gets incremented
-		proc_bootstrap() would be a good plaace to initialize that counter
+		proc_bootstrap() would be a good plaace to initialize that counter (what initializes shit before os start..?)
 		provide mutex for global structure
+			where to initialize lock?? must be created before everything
+				proc_bootstrap(). (proc.h) 
+					edit proc_bootstrap() at the end.
 
 assign PID to the child process (unque) (no need to worry about reusing PID)
 spawn a thread for chlld process (thread fork) -> needs an entry point (a special function we create which grabs/copy trapframe from the parent and calls mips usermode)
