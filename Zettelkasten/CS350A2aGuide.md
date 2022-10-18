@@ -60,9 +60,14 @@ usermode time
 
 waitpid
 condition variable for the condition is child dead?
+
+getpid
+lock it
+
 exit
 if parent dead, don't generate status code data
-if parent not dead, generate a
+if parent not dead, generate data
+
 
 
 
