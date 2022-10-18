@@ -59,7 +59,10 @@ put trapframe on the stack
 usermode time
 
 waitpid
-
+condition variable for the condition is child dead?
+exit
+if parent dead, don't generate status code data
+if parent not dead, generate a
 
 
 
