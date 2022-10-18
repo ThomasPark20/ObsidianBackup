@@ -10,10 +10,16 @@ code for waitpid and exit are very coupled
 
 Fork
 create new process struct
-	
-
+	add new fields to process struct (pid etc)
+	proc_create_runprogram
+		this sets up VFS and console (don't worry now)
+	check for errors
+		what if proc_create_runprogram returns NULL? 
+			modify trapframe of parent process a3 v0 (register values) (example in course notes?)
+			
 
 create and copy.... (already a function to help exists)
+	
 attach/set child's address space
 assign PID to the child process (unque) (no need to worry about reusing PID)
 spawn a thread for chlld process (thread fork) -> needs an entry point (a special function we create which grabs/copy trapframe from the parent and calls mips usermode)
