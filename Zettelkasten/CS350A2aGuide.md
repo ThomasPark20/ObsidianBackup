@@ -43,14 +43,15 @@ spawn a thread for chlld process (thread fork) -> needs an entry point (a specia
 	copy trapframe on child kernel stack
 	update a3 v0 (0,0 as child creation was sucess)
 	increment PC by 4
-enter_forked_process (change to void pointer in def???)
+enter_forked_process (change to void pointer in def as thread_fork only consumes void pointers)
 before calling thread_fork struct trapframe * tf_copy = Kmalloc(size of trapframe struct)
 lock
 	*tf_copy = current process's trapframe
 unlock
 then enter_forked_process runs with copied trapframe (free it after enter_forked_process)
-struct trapframe tf; (as we are running in kernel if inside enter_forked_process)
-
+struct trapframe tf_copy; (as we are running in kernel if inside enter_forked_process)
+tf_copy = *tf; //cast in to a trapframe
+// free tf not tf_copy
 put trapframe on the stack 
 usermode time
 
