@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350A2aGuide.md",
-                "mode": "source",
+                "file": "Zettelkasten/CS350 Processeses.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350A2aGuide.md",
+                "file": "Zettelkasten/CS350 Processeses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +120,7 @@
   },
   "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/CS350 Processeses.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/System Call.md",
@@ -128,7 +129,6 @@
     "Files/CS350synchro1.png",
     "Zettelkasten/volatile.md",
     "Zettelkasten/9-29CS350.md",
-    "Zettelkasten/Preemptive round-robin.md",
-    "Zettelkasten/trap frame.md"
+    "Zettelkasten/Preemptive round-robin.md"
   ]
 }
