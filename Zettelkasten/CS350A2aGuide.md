@@ -58,3 +58,10 @@ mips_usermode(...);
 put trapframe on the stack 
 usermode time
 
+waitpid
+
+
+
+
+
+
