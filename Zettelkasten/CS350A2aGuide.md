@@ -40,7 +40,7 @@ assign PID to the child process (unque) (no need to worry about reusing PID)
 	could use process's address as PID (after making it positive etc) (unique by design if positive done correctly)
 
 spawn a thread for chlld process (thread fork) -> needs an entry point (a special function we create which grabs/copy trapframe from the parent and calls mips usermode)
-	Chi
+	
 put trapframe on the stack 
 usermode time
 
