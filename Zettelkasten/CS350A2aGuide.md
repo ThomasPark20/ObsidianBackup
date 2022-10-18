@@ -18,9 +18,21 @@ create new process struct
 			modify trapframe of parent process a3 v0 (register values) (example in course notes?)
 			
 
-create and copy.... (already a function to help exists)
-	
+create and copy address space (already a function to help exists)
+	child process must == parent
+	as_copy() copies a new address space and copies pages from old to new
+	check for errors
+		return error code
+	Associate address space not associated with new process yet
+		look at curproc_setas() (use as template) to figure out how to give a process an address space
+	check for errors
+		
 attach/set child's address space
+	give unique PID and PID>0 (as 0 is what is returned in child code thingy in lecture notes)
+		can assume max of 64 PIDs needed and just have a global counter that gets incremented
+		proc_bootstrap() would be a good plaace to initialize that counter
+		provide mutex for global structure
+
 assign PID to the child process (unque) (no need to worry about reusing PID)
 spawn a thread for chlld process (thread fork) -> needs an entry point (a special function we create which grabs/copy trapframe from the parent and calls mips usermode)
 put trapframe on the stack 
