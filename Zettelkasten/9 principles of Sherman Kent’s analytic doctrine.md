@@ -36,10 +36,7 @@ tags: #books #cybersec #cti
 #### 8. Effective communication of policy-support information and judgments
 	- Avoid lack of clarity and the lack of clear direction
 		- In Kent's view, may or could is basically saying an event may happen in probability 0 < P < 100
-1. Focus on Policymaker Concerns
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
+			- In this case, provide details to why the uncertainty
+#### 9. Straightforward Admission of Mistakes
+	- Study mistakes
+		- They will be made
