@@ -11,7 +11,7 @@ tags: #books #cybersec #cti
 	- Anticipate policymakers
 		- Attentive to problems not yet on the policymaker's minds.
 #### 2. Avoidance of a Personal Policy Agenda
-	- Consider all cases, no matter how low the probablity is.
+	- Consider all cases, no matter how low the probability is.
 	- This forces the policymakers to choose.
 #### 3. Intellectual Rigor
 	- Rigorously evaluaate information for validity and diagnosticity
@@ -31,15 +31,12 @@ tags: #books #cybersec #cti
 #### 6. Systematic Use of Outside Experts
 	- This is a no brainer. Why do scholars practice peer reviews?
 #### 7. Collective Responsibility for Judgement
-	- 
-3. Focus on Policymaker Concerns
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
-4. Focus on Policymaker Concerns
+	- Analysts presenting their findings should have represent and defend the appropriate corporate point of view.
+		- Bring everyone on to the responsibility ship
+#### 8. Effective communication of policy-support information and judgments
+	- Avoid lack of clarity and the lack of clear direction
+		- In Kent's view, may or could is basically saying an event may happen in probability 0 < P < 100
+1. Focus on Policymaker Concerns
 	- Accomodate policymakers (clients)
 		- Produce assessments timed to their decision cycle
 		- Produce assessments focused on their learning curve.
