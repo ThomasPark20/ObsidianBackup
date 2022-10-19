@@ -18,13 +18,18 @@ tags: #books #cybersec #cti
 		- Validity (counter Denial & Deception in information)
 		- Diagnosticity (manage "noise" in information)
 		- Uncertainties must be made explicit and accounted
-#### 4. Conscious E
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
+#### 4. Conscious Effort to Avoid Analytic Biases
+	- Strict No Bias Policy
+		- Resist the tendency to see what you expect to see in the information.
+		- Avoid "been-to" bias
+			- Prior experience is valuable, but today is a new day.
+		- Make assumptions explicit and challenge them vigorously
+#### 5. Willingness to Consider Other Judgements
+	- Argue and even dissent (to have differing opinion)
+		- AS LONG AS YOU HAVE THE BASIS THAT IS CLEAR
+			- Such as alternative assumptions and different interpretations of information
+#### 6. Systematic Use of Outside Experts
+	- This is a no brainer. Why do we d
 2. Focus on Policymaker Concerns
 	- Accomodate policymakers (clients)
 		- Produce assessments timed to their decision cycle
@@ -40,20 +45,6 @@ tags: #books #cybersec #cti
 	- Anticipate policymakers
 		- Attentive to problems not yet on the policymaker's minds.
 4. Focus on Policymaker Concerns
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
-5. Focus on Policymaker Concerns
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
-6. Focus on Policymaker Concerns
 	- Accomodate policymakers (clients)
 		- Produce assessments timed to their decision cycle
 		- Produce assessments focused on their learning curve.
