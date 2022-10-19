@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a66757c990eeb8b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Processeses.md",
+                "file": "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,17 +131,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "2da95be997f7e858",
+  "active": "a66757c990eeb8b6",
   "lastOpenFiles": [
-    "Zettelkasten/CS350A2aGuide.md",
+    "Templates/Books.md",
+    "Templates/Pages.md",
+    "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
     "Zettelkasten/CS350 Processeses.md",
+    "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/System Call.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
-    "Files/CS350synchro1.png",
-    "Zettelkasten/volatile.md",
-    "Zettelkasten/9-29CS350.md",
-    "Zettelkasten/Preemptive round-robin.md"
+    "Files/CS350synchro1.png"
   ]
 }
