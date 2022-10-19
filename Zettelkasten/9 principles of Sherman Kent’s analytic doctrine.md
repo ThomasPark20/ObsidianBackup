@@ -29,14 +29,9 @@ tags: #books #cybersec #cti
 		- AS LONG AS YOU HAVE THE BASIS THAT IS CLEAR
 			- Such as alternative assumptions and different interpretations of information
 #### 6. Systematic Use of Outside Experts
-	- This is a no brainer. Why do we d
-2. Focus on Policymaker Concerns
-	- Accomodate policymakers (clients)
-		- Produce assessments timed to their decision cycle
-		- Produce assessments focused on their learning curve.
-			- Actionable intelligience. Concise and simple to understand.
-	- Anticipate policymakers
-		- Attentive to problems not yet on the policymaker's minds.
+	- This is a no brainer. Why do scholars practice peer reviews?
+#### 7. Collective Responsibility for Judgement
+	- 
 3. Focus on Policymaker Concerns
 	- Accomodate policymakers (clients)
 		- Produce assessments timed to their decision cycle
