@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350A2aGuide.md",
+                "file": "Zettelkasten/10-27CS350.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350A2aGuide.md",
+                "file": "Zettelkasten/10-27CS350.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,13 +133,13 @@
   },
   "active": "a66757c990eeb8b6",
   "lastOpenFiles": [
+    "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/9-29CS350.md",
     "Zettelkasten/10-20CS350.md",
     "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
     "Templates/Books.md",
     "Templates/Pages.md",
     "Zettelkasten/CS350 Processeses.md",
-    "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/System Call.md",
     "Zettelkasten/CS350 Threads.md"
