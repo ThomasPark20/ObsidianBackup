@@ -42,15 +42,17 @@ tags: #research #cti #cybersec
 		- Analyze previous malware from certain adversaries etc
 		- VirusTotal, Hybrid-Analysis, Joe Sandbox etc are malware sandboxes.
 3. Domains
-	 1. Start
+	1. Start
 		 1. Find initial indicator thru WHOIS etc to find email etc
-	 2. Pivot
+	2. Pivot
 		 1. Find new info with info found by initial indicator.
 		 2. Who used this email? etc
-	 3. Validate
+	3. Validate
 		 1. Ensure these data points and investigations are meaningful
 		 2. Microsoft address is not meaningful
-4. External Datasets
-	1. 
-5. TLS Certificates
+4. TLS Certificates
+	1. Censys.io, scans.io, Circl.lu, PassiveTotal
+	2. Can be used to find C2 infrastructure
+
+## Processing and Exploitation
 
