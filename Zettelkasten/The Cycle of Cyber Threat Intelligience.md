@@ -23,4 +23,14 @@ tags: #research #cti #cybersec
 			 - What adversary behaviors should security focus on to identify threats that are the most likely to breach our organization?
 				 - (Phishing Campaigns, Adversary History, OSINT regarding adversary)
 2. Threat Modeling
+ ![[ThreatModeling.png]]
+- Identify what threats or adversaries may target which department or what data of our organization.
+
 3. Collection Management Framework
+	 - Where are we getting the data? How is it processed? How is it delivered? What questions are we asking of the data?
+	 - I.E. What requirements can we fulfill using these data?
+	 - ==What is the ingestion and analysis pipeline of our threat intel operation?==
+	 ![[SampleExternalCMFonMalwareData.png]]
+
+## Collection
+
