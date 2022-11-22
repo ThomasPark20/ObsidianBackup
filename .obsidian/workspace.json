@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#cti",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,17 +115,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2da95be997f7e858",
+  "active": "d3026ffb9dd78afb",
   "lastOpenFiles": [
+    "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
+    "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/tempraymondtipfrench.md",
     "Zettelkasten/French Alphabets.md",
     "Zettelkasten/French Pronunciation Rules.md",
-    "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Intro to OS.md",
     "Zettelkasten/CS350 Processeses.md",
-    "Zettelkasten/CS350A2aGuide.md",
-    "Zettelkasten/10-27CS350.md"
+    "Zettelkasten/CS350A2aGuide.md"
   ]
 }

@@ -5,3 +5,10 @@ tags: #research #cti #cybersec
 
 # The Cycle of Cyber Threat Intelligience
 
+![[TheIntelligienceCycle.png]]
+
+## Planning and Direction
+
+1. Intelligience Requirements
+2. Threat Modeling
+3. Co
