@@ -41,7 +41,16 @@ tags: #research #cti #cybersec
 	1. Malware Collections / Samples
 		- Analyze previous malware from certain adversaries etc
 		- VirusTotal, Hybrid-Analysis, Joe Sandbox etc are malware sandboxes.
-1. Domains
-2. External Datasets
-3. TLS Certificates
+3. Domains
+	 1. Start
+		 1. Find initial indicator thru WHOIS etc to find email etc
+	 2. Pivot
+		 1. Find new info with info found by initial indicator.
+		 2. Who used this email? etc
+	 3. Validate
+		 1. Ensure these data points and investigations are meaningful
+		 2. Microsoft address is not meaningful
+4. External Datasets
+	1. 
+5. TLS Certificates
 
