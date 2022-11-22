@@ -33,4 +33,15 @@ tags: #research #cti #cybersec
 	 ![[SampleExternalCMFonMalwareData.png]]
 
 ## Collection
+### Some Key Collection Sources
+1. Intrusion Analysis
+	1. Perform analysis on previous intrusions.
+		![[Intrusion_Kill_Chain_-_v2 2.png]]
+2. Malware
+	1. Malware Collections / Samples
+		- Analyze previous malware from certain adversaries etc
+		- VirusTotal, Hybrid-Analysis, Joe Sandbox etc are malware sandboxes.
+1. Domains
+2. External Datasets
+3. TLS Certificates
 
