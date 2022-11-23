@@ -76,4 +76,12 @@ Example:
 	- a relocation offset register: offset\[i\] and
 	- a limit register: limit\[i\]
 - To translate
-	- s
+	```python
+	s = SegmentNumber(v) # segment id
+	a = OffsetWithinSegment(v) # segment's offset
+	if (a >= limit[s]):
+		raise memory exception
+	else
+		p = a + offset[a]
+```
+	![[Pasted image 20221123184227.png]]

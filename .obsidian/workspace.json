@@ -11,11 +11,9 @@
             "id": "157290d2b7ed479c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Zettelkasten/CS350 Virtual Memory.md",
-                "mode": "source",
-                "source": false
+                "file": "Files/Pasted image 20221123184227.png"
               }
             }
           }
@@ -77,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Virtual Memory.md",
+                "file": "Files/Pasted image 20221123184227.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,8 +115,8 @@
   },
   "active": "157290d2b7ed479c",
   "lastOpenFiles": [
-    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Virtual Memory.md",
+    "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/10-27CS350.md",
     "Zettelkasten/TTP.md",
     "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
