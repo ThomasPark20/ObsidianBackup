@@ -84,4 +84,7 @@ Example:
 	else
 		p = a + offset[a]
 ```
-	![[Pasted image 20221123184227.png]]
+	![[SegmentedAddressTranslationA.png]]
+- 0x1240 -> 0001 0010 0100 0000
+	- Segment (1bit) -> 0
+	- Offset (rest-> 001 0010 0010
