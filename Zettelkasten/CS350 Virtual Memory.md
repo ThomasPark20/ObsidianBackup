@@ -12,16 +12,24 @@ sad memory time
 
 ## Details
 
+### KMG
+- ==B = byte, b = bit==
+- ==1K = 2^10, 1M 2^20, 1G=2^30==
+Key skills:
+1. ![[Addrspacebitsconversion.png]]
+2. ![[HowmanyXfitY.png]]
+
+
 ### Physical address
 ==provided directly by hardware, this is the actual memory==
 
+- If ==P== bits to specify the physical address of each byte, max phys mem = 2^==P== bytes
+
 ### Virtual address
 ==fake. provided by OS to the processes==
+- If ==V== bits to specify the virtual address of each byte, max ==V==mem = 2^==V== bytes
 
 #### Why use VMEM?
 - provide each process with the *illusion* that it has a large amount of contiguous memory available exclusively to itself. i.e. an address space
 - protect one process's address space from other (perhaps buggy) processes
 
-### KMG
-- ==B = byte, b = bit==
-- == 1K = 2==
