@@ -65,6 +65,9 @@ Example:
 #### Properties of Segmentation
 - we segment the addr space
 - ==kernel== maintains an ==offest and limit value for each segment==
-- Vaddr has two parts: (segment ID. offset within segment)
+- Vaddr has two parts: (==segment ID. offset within segment==)
 - With K bits for the segment ID, we can have up to:
-	- 2^
+	- ==2^K== segments
+	- ==2^{V-K}== bytes per segment
+- kernel decides where each fragment is placed in phys mem
+- ==Fragmentation still possible==
