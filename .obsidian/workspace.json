@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/TTP.md",
+                "file": "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/TTP.md",
+                "file": "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +115,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "157290d2b7ed479c",
+  "active": "d3026ffb9dd78afb",
   "lastOpenFiles": [
+    "Zettelkasten/TTP.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
@@ -125,7 +126,6 @@
     "Zettelkasten/French Pronunciation Rules.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/CS350 Threads.md",
-    "Zettelkasten/CS350 Intro to OS.md",
-    "Zettelkasten/CS350 Processeses.md"
+    "Zettelkasten/CS350 Intro to OS.md"
   ]
 }

@@ -4,4 +4,15 @@ tags: #scratch #cti #cybersec
 
 #  2022-11-22 5crpmtc7Ppm2
 ## tactics, techniques, and procedures (TTP)
-- 
+- Behavior of an actor
+### Tactics
+- High-level descriptions of behavior
+### Techniques
+- Detailed descriptions of behavior in the context of tactic
+### Procedures
+- Even lower level, highly detailed descriptions in the context of a technique
+
+- These may describe an actor's tendency or pattern of using certain malware variants or attack vector. 
+- Phishing? Or just thru IABs?
+- What tool do they use?
+- What are their usual targets? ICS? Public Infrastructure? Financial District?
