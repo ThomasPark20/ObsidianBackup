@@ -87,4 +87,8 @@ Example:
 	![[SegmentedAddressTranslationA.png]]
 - 0x1240 -> 0001 0010 0100 0000
 	- Segment (1bit) -> 0
-	- Offset (rest-> 001 0010 0010
+	- Offset (rest)-> 001 0010 0100 0000 -> 0x1240
+	- segment offset < limit -> no exception. Thus,
+	- 0x38000 + 0x1240 = 0x39240
+#### Approach 2
+
