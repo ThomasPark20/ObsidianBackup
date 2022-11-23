@@ -47,4 +47,12 @@ else
 	raise memory exception
 ```
 - Offset and limit are maintained by kernel for each process. 
-- Kernel changes these values in the MMU regist
+- Kernel changes these values in the MMU register in case of context switch between processes
+Example:
+- if offset = 0x24000 and limit = 0x7000, phys mem \[0x24000, 0x2AFFF\]
+#### Properties of Dynamic Relocation
+- uses contiguous range of physical address
+- potential ==fragmentation of physical memory==
+	- OS must allocate/deallocate variable-sized chunks of physical mem since addr spaces may have different sizes
+	- ==Example==
+		- 
