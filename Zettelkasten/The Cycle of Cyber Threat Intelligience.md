@@ -58,7 +58,7 @@ tags: #research #cti #cybersec
 
 1. Structered Models: Data into Buckets (AWN literally uses S3 buckets to separate data)
 	- Some examples: Kill Chain, Diamond Model, MITRE ATT&CK, VERIS
-	- Diamond Model ([TTP]) ([Diamond Model White Paper](https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf))
+	- Diamond Model ([[TTP]]) ([Diamond Model White Paper](https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf))
 		- ![[TheDiamondModel.png]]
 	- [MITRE ATT&CK](https://attack.mitre.org/matrices/enterprise/)
 		- documentation of tactics and techniques (organized like OWASP top 10)
@@ -94,11 +94,15 @@ tags: #research #cti #cybersec
 		- Strategic - least technical
 		- Operational
 		- Tactical - most technical
-	3. Tips on Effective Report Writing
+2. Tips on Effective Report Writing
 		1. Tell an Honest Story
-		2. BLUF - Bottom Line Up Front (begin a messge with key)
+		2. BLUF - Bottom Line Up Front (begin a message with key info)
 		3. Request Action
 		4. Metrics That Matter
 		5. Bring It to Life
 		6. Give Credit
 		7. Technical Appendixes
+3. Constructing Assessments
+		- Assessment = confidence + analysis + evidence + sources
+		- Example (kinda like statistics)
+			- We assess with \<insert confidence\> that \<insert assessment\> because of \<insert evidence\> \<insert sources\>
