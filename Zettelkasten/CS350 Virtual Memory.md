@@ -91,4 +91,6 @@ Example:
 	- segment offset < limit -> no exception. Thus,
 	- 0x38000 + 0x1240 = 0x39240
 #### Approach 2
-
+- we now have a table.
+- ![[Pasted image 20221123185713.png]]
+- 
