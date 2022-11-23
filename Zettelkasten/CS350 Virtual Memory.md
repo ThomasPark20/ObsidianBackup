@@ -31,5 +31,20 @@ Key skills:
 
 #### Why use VMEM?
 - provide each process with the *illusion* that it has a large amount of contiguous memory available exclusively to itself. i.e. an address space
+	- allows greater support for multiprocessing
 - protect one process's address space from other (perhaps buggy) processes
 
+### Dynamic Relocation
+
+- Vaddr of each process is translated using:
+	1. offset: stored in ==relocation register==, ==addr in pmem where the process's memory begins==
+	2. limit: the amount of memory used by the process
+To translate:
+```c
+if (v < limit) then
+	p = v + offest
+else
+	raise memory exception
+```
+- Offset and limit are maintained by kernel for each process. 
+- Kernel changes these values in the MMU regist
