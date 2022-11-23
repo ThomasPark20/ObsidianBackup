@@ -68,5 +68,15 @@ tags: #research #cti #cybersec
 - Everyone has it. Even you. 
 - Examples (confirmation bias)
 	- Selectively support one hypothesis
-		- May trigger evidence inclusion bias, seeking supporting evidence only
-		- May trig
+		- May trigger: 
+			- Evidence inclusion bias, seeking supporting evidence only
+			- Significance Bias, greater significance to supporting data only
+### Leveraging Different Types of Analysis
+1. Know yourself
+	1. What is my favorite type of analysis for given situations?
+	2. What analysis types facilitate my process of analysis?
+2. Know the team
+	1. What are my team members' analysis types?
+3. Inject new approaches
+	1. Try new types of analysis, especially on critical cases
+	2. Do NOT leverage only a single type of analysis
