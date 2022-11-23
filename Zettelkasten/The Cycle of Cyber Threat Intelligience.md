@@ -60,5 +60,13 @@ tags: #research #cti #cybersec
 	- Some examples: Kill Chain, Diamond Model, MITRE ATT&CK, VERIS
 	- Diamond Model ([TTP])
 		- ![[TheDiamondModel.png]]
-	- MITRE ATT&CK
-		- documentation of tactics and techniques (think like )
+	- [MITRE ATT&CK](https://attack.mitre.org/matrices/enterprise/)
+		- documentation of tactics and techniques (organized like OWASP top 10)
+## Analysis and Production
+
+### Bias.
+- Everyone has it. Even you. 
+- Examples (confirmation bias)
+	- Selectively support one hypothesis
+		- May trigger evidence inclusion bias, seeking supporting evidence only
+		- May trig
