@@ -55,4 +55,10 @@ Example:
 - potential ==fragmentation of physical memory==
 	- OS must allocate/deallocate variable-sized chunks of physical mem since addr spaces may have different sizes
 	- ==Example==
-		- 
+		- 100MB free, not contiguous.
+		- process needs 100MB. 
+		- Even though free, not contiguous. cannot assign
+- In the end it allows ==multiple processes to share RAM== and ==isolates each process's address space==, but it ==does not use phys mem efficiently==
+
+### Segmentation
+
