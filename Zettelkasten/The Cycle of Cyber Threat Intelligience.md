@@ -62,6 +62,7 @@ tags: #research #cti #cybersec
 		- ![[TheDiamondModel.png]]
 	- [MITRE ATT&CK](https://attack.mitre.org/matrices/enterprise/)
 		- documentation of tactics and techniques (organized like OWASP top 10)
+
 ## Analysis and Production
 
 ### Bias.
@@ -80,3 +81,24 @@ tags: #research #cti #cybersec
 3. Inject new approaches
 	1. Try new types of analysis, especially on critical cases
 	2. Do NOT leverage only a single type of analysis
+
+## Dissemination 
+- the action or fact of spreading something, especially information, widely
+
+1. Know your audience
+	1. Different audiences have different intel needs.
+		 - non-technical? maybe tactic is enough
+		 - semi? techinique?
+		 - Industry professionals? full TTP?
+	2. Can be summarized:
+		- Strategic - least technical
+		- Operational
+		- Tactical - most technical
+	3. Tips on Effective Report Writing
+		1. Tell an Honest Story
+		2. BLUF - Bottom Line Up Front (begin a messge with key)
+		3. Request Action
+		4. Metrics That Matter
+		5. Bring It to Life
+		6. Give Credit
+		7. Technical Appendixes
