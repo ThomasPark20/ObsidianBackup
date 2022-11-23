@@ -71,3 +71,9 @@ Example:
 	- ==2^{V-K}== bytes per segment
 - kernel decides where each fragment is placed in phys mem
 - ==Fragmentation still possible==
+#### Approach 1
+- For each segment i, the MMU has
+	- a relocation offset register: offset\[i\] and
+	- a limit register: limit\[i\]
+- To translate
+	- s
