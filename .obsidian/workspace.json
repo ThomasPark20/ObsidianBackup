@@ -11,8 +11,12 @@
             "id": "157290d2b7ed479c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -53,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -74,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,10 +112,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "157290d2b7ed479c",
   "lastOpenFiles": [
+    "Zettelkasten/10-27CS350.md",
     "Zettelkasten/TTP.md",
     "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/HTTP Response Status Codes.md",
@@ -120,7 +126,6 @@
     "Zettelkasten/French Alphabets.md",
     "Zettelkasten/French Pronunciation Rules.md",
     "Zettelkasten/CS350 Synchronization.md",
-    "Zettelkasten/CS350 Threads.md",
-    "Zettelkasten/CS350 Intro to OS.md"
+    "Zettelkasten/CS350 Threads.md"
   ]
 }
