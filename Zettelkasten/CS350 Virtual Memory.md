@@ -142,4 +142,5 @@ Example. 0x58B4, 2 levels, each page num uses 2 bits
 
 - need to know the number of bits for each page and the num of levels (given above)
 - vaddr has 3 parts: p1, p2. offset
-- 
+- 0x58B4 -> 0101 1000 1011 0100
+- Thus, p1 -> 01 p2 -> 02 
