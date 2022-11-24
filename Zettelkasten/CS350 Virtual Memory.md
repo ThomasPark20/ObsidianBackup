@@ -191,4 +191,4 @@ Benefits
 - Multi-level paging reduces the amount of mem required to store page-to-frame mappings
 Costs
 - TLB misses are increasingly expensive with deeper page tables.
-	- 
+	- TLB miss for a 3 level page table requires minimum three mem access
