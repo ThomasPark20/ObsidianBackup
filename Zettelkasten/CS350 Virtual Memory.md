@@ -306,3 +306,4 @@ What do we need?:
 	 2. Update PTE (set the present bit)
 	 3. Return from exception
 	 ![[Pasted image 20221124172354.png]]
+
