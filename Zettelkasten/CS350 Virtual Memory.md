@@ -102,4 +102,11 @@ Example:
 - p = 0x72004
 ### Paging
 - Divide Physical memory into fixed-size chunks called frames (physical pages)
-- 
+- Page size must equal frame size
+Calculations:
+- physical address 18 bits
+	- size of phys mem -> 2^18 = 256KB
+- frame size = 2^12 = 4KB
+	- phys mem has 2^18 / 2^12 = 2^6 = 64 frames
+- v address 16 bits
+	- 2^16 / 2^12 = 2^4 = 16 pages
