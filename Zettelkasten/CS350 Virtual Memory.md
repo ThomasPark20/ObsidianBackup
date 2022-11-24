@@ -112,5 +112,14 @@ Calculations:
 - v address 16 bits
 	- 2^16 / 2^12 = 2^4 = 16 pages
 - N of PTEs = Max Vmem size / Page size
+- Number of Bits for offset = log(Page size)
+- Number of Bits for Page number = log(Number of PTEs)
 #### Translation
-- MMU has ==page table base register== that p
+- MMU has ==page table base register== that points to the page table for the current process
+1. determine the page number and offset of the Vaddr
+	- page number = v address divided by page size
+	- offset = v address module page size
+2. look up the PTE using page number
+3. check if PTE valid if not, exception
+4. combine the corresponding frame number with the offset to get paddr
+	- paddr = (frame number x frame size) + offset
