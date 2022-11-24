@@ -132,3 +132,6 @@ basically find how many bits each part has and look at table
 1. write protection bit
 	- If a write operation uses vaddr on read-only page, MMU will raise exception when it translate the vaddr
 
+### Multi-level Paging
+- split the page table into multiple levels
+- no valid PTE? do not create that table
