@@ -101,4 +101,5 @@ Example:
 - 2004 < 6000 thus no exception
 - p = 0x72004
 ### Paging
-
+- Divide Physical memory into fixed-size chunks called frames (physical pages)
+- 
