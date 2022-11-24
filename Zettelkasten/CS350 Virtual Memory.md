@@ -202,3 +202,7 @@ Costs
 
 #### addrspace
 ![[Pasted image 20221124162158.png]]
+- as_vbase: starting address of each segment in vmem
+- as_pbase: starting address of each segment in pmem (relocation)
+- as_npages: size in pages (limit)
+- stackpbase: base of stack in phys mem only (==as size, top and bottom of stack in vmem is fixed for all processes==)
