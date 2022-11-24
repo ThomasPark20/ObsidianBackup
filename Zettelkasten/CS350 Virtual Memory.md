@@ -269,9 +269,25 @@ Two challenges
 OS/161
 - sys/161 only supports 1GB of pmem
 - kernel Vmem has 3 segments
-	1. kseg0 (512MB) : kernel data structure, stacks, code, page table, etc
-	2. kseg1 (512MB) : for addressing devices
+	1. ==kseg0 ==(512MB) : kernel data structure, stacks, code, page table, etc
+		- subtract 0x8000 0000 to translate (TLB not used)
+		- maps to first 512MB of Pmem
+	2. ==kseg1== (512MB) : for addressing devices (like hdd)
+		- subtract 0xA000 0000 to translate (TLB not used)
+		- maps to first 512MB of Pmem
 	3. kseg2 (1GB) : not used
 - kernel Pmem is divided into frames managed by the kernel in the coremap
 	- coremap -> Which frames are in use? checker. (Which process using this frame?)
-	- 
+
+### Swap
+
+Goals:
+1. Allow vaddr space larget than installed RAM
+2. Allow greater multiprogramming levels by using less RAM for each process
+
+How?:
+1. Allow vmem pages to be stored in secondary storage
+2. ==Swap== pages (or segments) between secondary and primary so that its in primary when needed.
+
+What do we need?:
+- present bit -> if in pmem, 1
