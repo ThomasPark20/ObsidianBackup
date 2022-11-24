@@ -103,6 +103,7 @@ Example:
 ### Paging
 - Divide Physical memory into fixed-size chunks called frames (physical pages)
 - Page size must equal frame size
+- ==Each process has its own page table==
 Calculations:
 - physical address 18 bits
 	- size of phys mem -> 2^18 = 256KB
@@ -110,3 +111,6 @@ Calculations:
 	- phys mem has 2^18 / 2^12 = 2^6 = 64 frames
 - v address 16 bits
 	- 2^16 / 2^12 = 2^4 = 16 pages
+- N of PTEs = Max Vmem size / Page size
+#### Translation
+- MMU has ==page table base register== that p
