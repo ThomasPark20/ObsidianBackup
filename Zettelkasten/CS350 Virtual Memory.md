@@ -184,6 +184,10 @@ If V = 40 -> 2^40, page size = 4KB = 2^12, and PTE size 4 bytes...
 - 64 entry room
 - each entry is 64 bits
 - TLBLO_DIRTY (write permission) = 1: you can write to this page
+- v,paddr -> 32 bits. 
+- page size -> 4KB (2^12 thus 12 bits)
+	- Therefore, each addr need to have 12 bits front to store offset
+		- Meaning frame number and page number are 20 (32 - 12) bits each
 
 ### Paging Summary
 Benefits
