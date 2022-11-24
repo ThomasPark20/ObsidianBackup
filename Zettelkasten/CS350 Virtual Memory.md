@@ -307,4 +307,4 @@ What do we need?:
 	 3. Return from exception
 	 ![[Pasted image 20221124172354.png]]
 
-###
+### Optimal Page Replacement
