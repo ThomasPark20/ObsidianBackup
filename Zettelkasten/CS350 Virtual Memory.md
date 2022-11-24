@@ -210,3 +210,16 @@ Costs
 1. calculate the ==top== and ==bottom== address for each segment
 2. top -> base + npages * PAGE_SIZE (predefined as 0x1000 or 4096 or 4K)
 3. bottom -> just base
+4. ==different for stack== as it grows the opposite way!
+	1. base -> USERSTACK (0x8000 0000) - DUMBVM_STACKPAGES (0xC) * PAGE_SIZE
+	2. stacktop = USERSTACK (0x8000 0000)
+```python
+if (faultaddress >= vbase1 && faultaddress < vtop1): # in code segment?
+	paddr = (faultaddress - vbase1) + as->as_pbase1
+else if (faultaddress >= vbase2 && faultaddress < vtop2): # in data segment?
+	paddr = (faultaddress - vbase2) + as->as_pbase2
+else if (faultaddress >= stackbase && faultaddress < stacktop): # in stack?
+	paddr = (faultaddress - stacikbase) + as->as_stackpbase
+else:
+	return EFAULT
+```
