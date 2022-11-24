@@ -208,4 +208,5 @@ Costs
 - stackpbase: base of stack in phys mem only (==as size, top and bottom of stack in vmem is fixed for all processes==)
 #### Translation
 1. calculate the ==top== and ==bottom== address for each segment
-2. 
+2. top -> base + npages * PAGE_SIZE (predefined as 0x1000 or 4096 or 4K)
+3. bottom -> just base
