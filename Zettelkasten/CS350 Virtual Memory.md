@@ -207,4 +207,5 @@ Costs
 - as_npages: size in pages (limit)
 - stackpbase: base of stack in phys mem only (==as size, top and bottom of stack in vmem is fixed for all processes==)
 #### Translation
-1. calculat
+1. calculate the ==top== and ==bottom== address for each segment
+2. 
