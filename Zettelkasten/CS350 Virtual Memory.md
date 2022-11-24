@@ -291,3 +291,18 @@ How?:
 
 What do we need?:
 - present bit -> if in pmem, 1
+
+### Page Fault
+- present bit is zero
+
+- Hardware-managed TLB
+	- MMU detects this and raises exception, which kernel must handle
+- Software-managed TLB
+	- Kernel detects this after TLB miss and checking the missing page's PTE... and?
+	- TLB SHOULD NOT CONTAIN ANY ENTRIES THAT ARE NOT PRESENT IN RAM
+
+- What should the Kernel do?
+	 1. Swap the page into memory from secondary storage (possibly evicting other page to secondary)
+	 2. Update PTE (set the present bit)
+	 3. Return from exception
+	 ![[Pasted image 20221124172354.png]]
