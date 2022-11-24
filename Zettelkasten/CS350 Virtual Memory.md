@@ -310,4 +310,19 @@ What do we need?:
 ### Optimal Page Replacement
 - MIN
 	- Replace the page that will not be referenced for the longest time
-	- 
+	- This is a theoretical policy, as it needs knowledge of future to implement
+- Locality
+	1. temporal locality
+		1. likely access recently accessed pages
+	2. spatial locality
+		1. likely access parts close to parts recently accessed
+- LRU
+	- evict page that has not been used in the longest period of time
+- challenges using LRU
+	- must track usage and find a maximum value
+	- kernel not aware which pages a program is using until exception (TLB miss)
+- solution to this
+	- Have the MMU track page accesses in hardware
+		- use bit (reference bit) to each PTE.
+			- set by MMU each time the page is used.
+			- read and ==cleared== by the kernel.
