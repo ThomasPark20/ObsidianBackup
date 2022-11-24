@@ -219,11 +219,21 @@ if (faultaddress >= vbase1 && faultaddress < vtop1): # in code segment?
 else if (faultaddress >= vbase2 && faultaddress < vtop2): # in data segment?
 	paddr = (faultaddress - vbase2) + as->as_pbase2
 else if (faultaddress >= stackbase && faultaddress < stacktop): # in stack?
-	paddr = (faultaddress - stacikbase) + as->as_stackpbase
+	paddr = (faultaddress - stackbase) + as->as_stackpbase
 else:
 	return EFAULT
 ```
 ![[dumbvmexample.png]]
 
 0x0040004 is code segment -> 0x0040004 - 0x0040000 + 0x0020000 -> 0x0020004
-0x8000000 - C x 1000 = 7FFF40000 <= 0x7FFF41A4 < stacktop
+
+0x8000000 - 0xC * 0x1000 = 0x7FFF4000 <= ==0x7FFF41A4== < stacktop -> is stack -> 0x7FFF41A4 - 0x7FFF4000 + 0x00100000 = 0x001001A4
+
+Where do these vaddrs come from?
+- ==from the program's object file (elf)==
+
+### Initializing an Addr Space
+- When kernel creates a process
+	- create an address space
+	- load the program's code and data
+- OS/161 pre-loads addr pa
