@@ -93,4 +93,9 @@ Example:
 #### Approach 2
 - we now have a table.
 - ![[Pasted image 20221123185713.png]]
-- 
+- 0x00002004 -> 0000 0000 0000 0000 0010 0000 0000 0100
+- seg num = 0x0
+- offset = 0x 000 0000 0000 0010 0000 0000 0100
+- 0x0 < 0x4 (segment number) thus no exception
+- 2004 < 6000 thus no exception
+- p = 0x72004
