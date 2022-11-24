@@ -327,9 +327,12 @@ What do we need?:
 			- set by MMU each time the page is used.
 			- read and ==cleared== by the kernel.
 - Clock Algorithm
-```
+```python
 while (use bit of victim is set) {
-	clear use bit of viction
-	victime = 
+	clear use bit of victim # 2nd chance
+	victim = (victim + 1) % num_frames
 }
+evict victim # use bit was 0
+victim = (victim + 1) % num_frames
 ```
+![[Pasted image 20221124185739.png]]
