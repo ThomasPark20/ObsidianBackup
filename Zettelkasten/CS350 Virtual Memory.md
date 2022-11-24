@@ -152,4 +152,22 @@ If V = 40 -> 2^40, page size = 4KB = 2^12, and PTE size 4 bytes...
 - Num of pages and PTEs needed = 2^40 / 2^12 = 2^28 pages
 - Num of PTE's that can be stored on each page = 2^12 / 2^2 = 2^10 PTEs
 - How many tables are needed to store all 2^28 PTEs? (as 2^28 pages)
-	- 2
+	- 2^28 / 2^10 = 2^18 page tables
+	- Thus top page table (==directory==) must hold 2^18 references to page tables
+	- requires 2^18(# references) x 2^2 (PTE size) = 2^20 or 1MB of space
+
+### Kernel vs MMU
+- Kernel (software)
+	- manages MMU on address space switches
+	- creates and manages page tables
+	- manages (allocate/deallocate) physical memory
+	- handle exceptions raised by the MMU
+- MMU (hardware)
+	- translate vaddr to paddr
+	- check for and raise exceptions when necessary
+
+### TLB
+- ==No TLB can be slow due to==
+	- So, at least one memory operation is required for all asm instruction.
+	- Doing this with only page table adds minimum of one extra memory operation
+- 
