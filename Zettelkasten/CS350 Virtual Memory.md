@@ -114,6 +114,7 @@ Calculations:
 - N of PTEs = Max Vmem size / Page size
 - Number of Bits for offset = log(Page size)
 - Number of Bits for Page number = log(Number of PTEs)
+- Page Table Size = Num of Pages x size of a PTE
 #### Translation
 - MMU has ==page table base register== that points to the page table for the current process
 1. determine the page number and offset of the Vaddr
