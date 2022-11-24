@@ -318,11 +318,18 @@ What do we need?:
 		1. likely access parts close to parts recently accessed
 - LRU
 	- evict page that has not been used in the longest period of time
-- challenges using LRU
+- ==Challenges using LRU==
 	- must track usage and find a maximum value
 	- kernel not aware which pages a program is using until exception (TLB miss)
-- solution to this
+- ==Solution to this==
 	- Have the MMU track page accesses in hardware
 		- use bit (reference bit) to each PTE.
 			- set by MMU each time the page is used.
 			- read and ==cleared== by the kernel.
+- Clock Algorithm
+```
+while (use bit of victim is set) {
+	clear use bit of viction
+	victime = 
+}
+```
