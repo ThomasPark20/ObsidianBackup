@@ -138,7 +138,8 @@ basically find how many bits each part has and look at table
 
 ==address translation is the same as single-level but lookup is different==
 
-Example. 0x58B4
+Example. 0x58B4, 2 levels, each page num uses 2 bits
 
-- need to know the number of bits for each page and the num of levels
+- need to know the number of bits for each page and the num of levels (given above)
+- vaddr has 3 parts: p1, p2. offset
 - 
