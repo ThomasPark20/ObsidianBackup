@@ -200,3 +200,5 @@ Costs
 ### dumbvm
 - ==OS/161 uses segmentation for user programs (processes) need to convert them to pages==
 
+#### addrspace
+![[Pasted image 20221124162158.png]]
