@@ -230,10 +230,32 @@ else:
 0x8000000 - 0xC * 0x1000 = 0x7FFF4000 <= ==0x7FFF41A4== < stacktop -> is stack -> 0x7FFF41A4 - 0x7FFF4000 + 0x00100000 = 0x001001A4
 
 Where do these vaddrs come from?
-- ==from the program's object file (elf)==
+- ==from the program's object file (elf format in our case)==
 
 ### Initializing an Addr Space
 - When kernel creates a process
 	- create an address space
 	- load the program's code and data
-- OS/161 pre-loads addr pa
+- OS/161 pre-loads addr space before program run
+	- Other OS load on demand
+		- faster, not use up physical memory for unused features
+### ELF Files
+- contain addr space segment desriptions
+	- Header describes the segment ==images==
+		- vaddr of the start of segment
+		- length of segment in vaddr
+		- location of segment in ELF file
+		- length of segment in ELF file
+	- Identifies vaddr of the program's entry point: the first instruction
+	- contains lots of other info too
+- OS/161 dumbvm assumes...
+	- a ==text (code) segment exists==
+		- contains program code and read-only data
+	- a ==data segment exists==
+		- contains other global program data
+- OS/161 dumbvm creates...
+	- ==stack segment==
+		- Why not in ELF file?
+			- ==Initial contents of stack are unkown until run time (think user input!)==
+		- 12 pages long, running from vaddr 0x7FFFC000 to 0x7FFFFFFF
+	- If ELF smal
