@@ -170,4 +170,25 @@ If V = 40 -> 2^40, page size = 4KB = 2^12, and PTE size 4 bytes...
 - ==No TLB can be slow due to==
 	- So, at least one memory operation is required for all asm instruction.
 	- Doing this with only page table adds minimum of one extra memory operation
-- 
+- What is TLB?
+	- small. fast, dedicated cache of addr translation in the MMU
+	- 1 entry 1 mapping (page # -> frame #)
+- ==How does MMU translate a vaddr on page p?==
+	- Hardware TLB
+		- MMU handle TLB misses, including page table look up and replacement of TLB entries. 
+		- No room for you to change it up
+	- Software TLB
+		- MMU only ever reads from TLB.
+		- you can change up page table structure
+#### OS/161 (MIPS R3000)
+- 64 entry room
+- each entry is 64 bits
+- TLBLO_DIRTY (write permission) = 1: you can write to this page
+
+### Paging Summary
+Benefits
+- paging does not introduce external fragmentation
+- Multi-level paging reduces the amount of mem required to store page-to-frame mappings
+Costs
+- TLB misses are increasingly expensive with deeper page tables.
+	- 
