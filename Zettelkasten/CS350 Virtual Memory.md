@@ -196,3 +196,7 @@ Benefits
 Costs
 - TLB misses are increasingly expensive with deeper page tables.
 	- TLB miss for a 3 level page table requires minimum three mem access
+
+### dumbvm
+- ==OS/161 uses segmentation for user programs (processes) need to convert them to pages==
+
