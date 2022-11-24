@@ -135,3 +135,10 @@ basically find how many bits each part has and look at table
 ### Multi-level Paging
 - split the page table into multiple levels
 - no valid PTE? do not create that table
+
+==address translation is the same as single-level but lookup is different==
+
+Example. 0x58B4
+
+- need to know the number of bits for each page and the num of levels
+- 
