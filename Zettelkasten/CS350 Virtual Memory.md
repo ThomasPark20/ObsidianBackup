@@ -123,3 +123,11 @@ Calculations:
 3. check if PTE valid if not, exception
 4. combine the corresponding frame number with the offset to get paddr
 	- paddr = (frame number x frame size) + offset
+![[Pasted image 20221123194822.png]]![[Pasted image 20221123194836.png]]
+0x102C -> page 0x1 -> valid -> add -> 0x2602C
+basically find how many bits each part has and look at table
+
+#### Other Info in PTE
+1. write protection bit
+	- If a write operation uses vaddr on read-only page, MMU will raise exception when it translate the vaddr
+
