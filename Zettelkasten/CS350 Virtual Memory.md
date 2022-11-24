@@ -143,4 +143,13 @@ Example. 0x58B4, 2 levels, each page num uses 2 bits
 - need to know the number of bits for each page and the num of levels (given above)
 - vaddr has 3 parts: p1, p2. offset
 - 0x58B4 -> 0101 1000 1011 0100
-- Thus, p1 -> 01 p2 -> 02 
+- Thus, p1 -> 01 p2 -> 01 offset 1000 1011 0100
+- find entry 01 from table 1
+- find entry 01 from table 2, add offset.
+
+#### calculations.. again
+If V = 40 -> 2^40, page size = 4KB = 2^12, and PTE size 4 bytes...
+- Num of pages and PTEs needed = 2^40 / 2^12 = 2^28 pages
+- Num of PTE's that can be stored on each page = 2^12 / 2^2 = 2^10 PTEs
+- How many tables are needed to store all 2^28 PTEs? (as 2^28 pages)
+	- 2
