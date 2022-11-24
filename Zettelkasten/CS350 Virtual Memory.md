@@ -71,6 +71,7 @@ Example:
 	- ==2^{V-K}== bytes per segment
 - kernel decides where each fragment is placed in phys mem
 - ==Fragmentation still possible==
+- ==Limitation:== space for heap and stack cannot grow beyond a certain point.
 #### Approach 1
 - For each segment i, the MMU has
 	- a relocation offset register: offset\[i\] and
@@ -99,3 +100,5 @@ Example:
 - 0x0 < 0x4 (segment number) thus no exception
 - 2004 < 6000 thus no exception
 - p = 0x72004
+### Paging
+
