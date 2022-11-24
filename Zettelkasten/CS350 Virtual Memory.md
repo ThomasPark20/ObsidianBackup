@@ -223,3 +223,7 @@ else if (faultaddress >= stackbase && faultaddress < stacktop): # in stack?
 else:
 	return EFAULT
 ```
+![[dumbvmexample.png]]
+
+0x0040004 is code segment -> 0x0040004 - 0x0040000 + 0x0020000 -> 0x0020004
+0x8000000 - C x 1000 = 7FFF40000 <= 0x7FFF41A4 < stacktop
