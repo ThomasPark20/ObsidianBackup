@@ -308,3 +308,6 @@ What do we need?:
 	 ![[Pasted image 20221124172354.png]]
 
 ### Optimal Page Replacement
+- MIN
+	- Replace the page that will not be referenced for the longest time
+	- 
