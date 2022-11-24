@@ -258,4 +258,20 @@ Where do these vaddrs come from?
 		- Why not in ELF file?
 			- ==Initial contents of stack are unkown until run time (think user input!)==
 		- 12 pages long, running from vaddr 0x7FFFC000 to 0x7FFFFFFF
-	- If ELF smal
+	- ==If ELF smaller than segment, zero fill the rest==
+### Kernel Vmem
+Two challenges
+- Bootstrapping: Since the kernel helps to implement vmem, how can kernel run in vmem when it is just starting?
+	- ==Solution is architecture-specific==
+- Sharing: Sometimes data needs to be copied between kernel and apps. How can this happend if they are in different vaddr?
+	- ==make the kernel's vmem overlap with process' vmem.==
+
+OS/161
+- sys/161 only supports 1GB of pmem
+- kernel Vmem has 3 segments
+	1. kseg0 (512MB) : kernel data structure, stacks, code, page table, etc
+	2. kseg1 (512MB) : for addressing devices
+	3. kseg2 (1GB) : not used
+- kernel Pmem is divided into frames managed by the kernel in the coremap
+	- coremap -> Which frames are in use? checker. (Which process using this frame?)
+	- 
