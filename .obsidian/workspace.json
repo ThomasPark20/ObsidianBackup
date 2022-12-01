@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3309c5e88f6ace65",
+        "id": "891dff166f5f5232",
         "type": "tabs",
         "children": [
           {
-            "id": "157290d2b7ed479c",
+            "id": "190b13cd0ec957ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5
+    "width": 320.5
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -114,17 +114,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "157290d2b7ed479c",
+  "active": "190b13cd0ec957ed",
   "lastOpenFiles": [
-    "Files/SegmentedAddressTranslationA.png",
+    "Zettelkasten/Pasted image 20221124162158.png.md",
     "Zettelkasten/CS350 Virtual Memory.md",
+    "Files/SegmentedAddressTranslationA.png",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/10-27CS350.md",
     "Zettelkasten/TTP.md",
     "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
-    "Zettelkasten/tempraymondtipfrench.md",
-    "Zettelkasten/French Alphabets.md"
+    "Zettelkasten/tempraymondtipfrench.md"
   ]
 }

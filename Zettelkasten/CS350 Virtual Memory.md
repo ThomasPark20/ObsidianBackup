@@ -93,7 +93,7 @@ Example:
 	- 0x38000 + 0x1240 = 0x39240
 #### Approach 2
 - we now have a table.
-- ![[Pasted image 20221123185713.png]]
+- ![[SegmentedAddressTranslationB.png]]
 - 0x00002004 -> 0000 0000 0000 0000 0010 0000 0000 0100
 - seg num = 0x0
 - offset = 0x 000 0000 0000 0010 0000 0000 0100
