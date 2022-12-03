@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -116,7 +115,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "190b13cd0ec957ed",
+  "active": "d3026ffb9dd78afb",
   "lastOpenFiles": [
     "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/TTP.md",
