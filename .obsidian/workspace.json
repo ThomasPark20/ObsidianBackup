@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
+                "file": "Zettelkasten/Diamond Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,12 +57,12 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be4a8e665361eb71",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
+                "file": "Zettelkasten/Diamond Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +113,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "active": "190b13cd0ec957ed",
   "lastOpenFiles": [
+    "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/TTP.md",
     "Zettelkasten/CS350 Virtual Memory.md",
     "Zettelkasten/Pasted image 20221124162158.png.md",
     "Files/SegmentedAddressTranslationA.png",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/10-27CS350.md",
-    "Zettelkasten/The Cycle of Cyber Threat Intelligience.md",
     "Zettelkasten/HTTP Response Status Codes.md",
     "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
     "Zettelkasten/tempraymondtipfrench.md"
