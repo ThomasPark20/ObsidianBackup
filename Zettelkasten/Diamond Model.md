@@ -17,8 +17,13 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 	- an *adversary*, requiring external *resources*, uses a *capability* and *methodology* over some *infrastructure* against a *victim* with a given *result*
 - ==Core Features==
 	- adversary
+		- operator -> hacker
+		- customer -> entity that benefits from activity
 	- capability
+		- capacity -> all the vulns and exposures that can be utlized regardless of victim
+		- adversary arsenal -> advesary's complete set of capabilities
 	- infrastructure
+		- 
 	- victim
 - ==Meta-Features== 
 	- used to order events with an *activity thread*
