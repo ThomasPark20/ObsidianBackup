@@ -14,4 +14,5 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 
 What is event?
 - discrete time-bound activity restricted to a specific phase where...
-	- an adversary, requiring external *resources*, uses a *capability* and *methodology*
+	- an adversary, requiring external *resources*, uses a *capability* and *methodology* over some *infrastructure* against a *victim* with a given *result*
+
