@@ -21,7 +21,20 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 	- infrastructure
 	- victim
 - ==Meta-Features== 
+	- used to order events with an *activity thread*
 	- timestamp (start and end)
 	- phase
 	- result
-	- 
+	- direction
+	- methodology
+	- resources
+- ==Confidence Value==
+	- applies to all features
+	- likeliness suite
+		- confidence of analytic conclusion
+		- accuracy of data source
+![[event.png]]
+Example Event n-tuple.
+![[victim.png]]
+Example detailed Victim n-tuple.
+
