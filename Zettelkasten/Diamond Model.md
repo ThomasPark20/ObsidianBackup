@@ -17,14 +17,21 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 	- an *adversary*, requiring external *resources*, uses a *capability* and *methodology* over some *infrastructure* against a *victim* with a given *result*
 - ==Core Features==
 	- adversary
-		- operator -> hacker
-		- customer -> entity that benefits from activity
+		- ==operator== -> hacker
+		- ==customer== -> entity that benefits from activity
 	- capability
-		- capacity -> all the vulns and exposures that can be utlized regardless of victim
-		- adversary arsenal -> advesary's complete set of capabilities
+		- ==capacity== -> all the vulns and exposures that can be utlized regardless of victim
+		- ==adversary arsenal== -> advesary's complete set of capabilities
 	- infrastructure
-		- 
+		- physical and/or logical comm structures the adversary uses to deliver and maintain the effects of capabilities
+		- ==Type 1== -> fully controlled or owned by adversary
+		- ==Type 2== -> "middle" infrastructure (typically what victims see)
+			- Zombies, hosting servers, hacked emails etc.
+		- ==Service Providers== -> ISP, domain registrars, mail providers etc
 	- victim
+		- ==Persona== -> people and orgs targetted (names, jobs, industries, interests, etc)
+		- ==Asset== -> attack surface, set of tech under victim control.
+		- 
 - ==Meta-Features== 
 	- used to order events with an *activity thread*
 	- timestamp (start and end)
