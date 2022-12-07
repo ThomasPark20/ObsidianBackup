@@ -31,15 +31,25 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 	- victim
 		- ==Persona== -> people and orgs targetted (names, jobs, industries, interests, etc)
 		- ==Asset== -> attack surface, set of tech under victim control.
-		- 
 - ==Meta-Features== 
 	- used to order events with an *activity thread*
 	- timestamp (start and end)
 	- phase
+		- ==Axiom 4== 
+			- Every malicious activity contains ==two or more== phases which must be successfully executed in succession to achieve the desired result.
 	- result
 	- direction
+		- from who to who? (adversary to victim?) (victim to adversary?)
 	- methodology
+		- syn flood? phishing campaign?
 	- resources
+		- Software (metasploit, etc)
+		- Knowledge (where to get exploits, etc)
+		- Information (username/password, etc)
+		- Hardware
+		- Funds
+		- Facilities
+		- Access (network path?)
 - ==Confidence Value==
 	- applies to all features
 	- likeliness suite
