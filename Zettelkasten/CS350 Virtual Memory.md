@@ -201,7 +201,7 @@ Costs
 - ==OS/161 uses segmentation for user programs (processes) need to convert them to pages==
 
 #### addrspace
-![[Pasted image 20221124162158.png]]
+![[addrspace.png]]
 - as_vbase: starting address of each segment in vmem
 - as_pbase: starting address of each segment in pmem (relocation)
 - as_npages: size of each segment in number of pages
