@@ -24,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Diamond Model.md",
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/Diamond Model.md",
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,12 +124,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "active": "aab64917207c93e4",
   "lastOpenFiles": [
-    "Zettelkasten/CS350 Virtual Memory.md",
     "Zettelkasten/Diamond Model.md",
+    "Zettelkasten/CS350 Virtual Memory.md",
     "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/CS350 Synchronization.md",
     "Files/addrspace.png",
