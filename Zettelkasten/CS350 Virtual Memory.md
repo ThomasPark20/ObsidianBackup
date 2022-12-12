@@ -40,7 +40,7 @@ Key skills:
 - Vaddr of each process is translated using:
 	1. offset: stored in ==relocation register==, ==addr in pmem where the process's memory begins==
 	2. limit: the amount of memory used by the process
-- MMU has
+- ==MMU has these==
 To translate:
 ```c
 if (v < limit) then
