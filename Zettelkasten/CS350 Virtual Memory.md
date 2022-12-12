@@ -234,6 +234,7 @@ else:
 
 Where do these vaddrs come from?
 - ==from the program's object file (elf format in our case)==
+- not stack
 
 ### Initializing an Addr Space
 - When kernel creates a process
