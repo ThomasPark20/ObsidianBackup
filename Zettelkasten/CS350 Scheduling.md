@@ -54,4 +54,14 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 ### CFS
 - each thread assigned weight 
 - ==goal==: ensure each thread gets share of the processor proportional to its weight
-	-
+	- have (a_i / w_i) = (a_j / w_j) for each pair of threads.
+- Track the virtual run time of each runnable thread
+	- a_i (sum all weight / w_i)
+- Example:
+![[cfs2.png]]
+
+### Per Core vs Shared
+
+- Per core Scales better
+	- Shared ready queue requires mutex as its a critical section
+	- 
