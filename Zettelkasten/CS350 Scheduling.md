@@ -64,4 +64,10 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 
 - Per core Scales better
 	- Shared ready queue requires mutex as its a critical section
-	- 
+	- more core, more fight for that mutex
+- Per core Better Performance (Affinity)
+	- Once thread moves in a core, data is in the core's cache
+	- by using per core, same thread same core, cache utilized, benefits from affinity
+- HOWEVER
+	- load imbalance exists (not for shared)
+	- thread migration mechanism required
