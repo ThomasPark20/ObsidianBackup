@@ -52,3 +52,6 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 ![[MLFQ.png]]
 
 ### CFS
+- each thread assigned weight 
+- ==goal==: ensure each thread gets share of the processor proportional to its weight
+	-
