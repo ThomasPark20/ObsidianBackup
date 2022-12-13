@@ -11,5 +11,8 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 
 ## Details
 
+#### Outputs & Performance Metrics
 
-## Summary
+- Scheduler decides which job should be running on the server at each point of time
+- For each job,
+	- *Start time s_i*, when ith job s
