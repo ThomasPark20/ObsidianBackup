@@ -43,3 +43,8 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 	- responsiveness: ensure that threads get to run regularly
 	- fairness: sharing of the CPU
 	- efficiency: account for the fact that there is a cost to switching
+
+### MLFQ
+- Good responsiveness for interactive threads - frequently blocked, devices etc
+- how? give them higher priority so they run whenever ready
+
