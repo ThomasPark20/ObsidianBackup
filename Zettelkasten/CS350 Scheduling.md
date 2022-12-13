@@ -28,3 +28,18 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 ### SJF (SRTF - Shortest Remaining Time First)
 - minimizes avg turnaround time
 - LONG JOBS MAY STARVE
+
+
+### CPU Scheduling
+- Difference between simple scheduling model:
+	- run time not normally known
+	- threads sometimes not runnable (blocked)
+	- ==threads may have different priorities==
+		- may be specified by the app or user
+		- chosen by scheduler
+		- combination of above
+		- 
+- Objective of the Scheduler
+	- responsiveness: ensure that threads get to run regularly
+	- fairness: sharing of the CPU
+	- efficiency: account for the fact that there is a cost to switching
