@@ -47,4 +47,8 @@ aaaaaaaaaaaaaaaaaaaaaaaa
 ### MLFQ
 - Good responsiveness for interactive threads - frequently blocked, devices etc
 - how? give them higher priority so they run whenever ready
+- ==Once a while (periodically), move all threads to highest queue==
 
+![[MLFQ.png]]
+
+### CFS
