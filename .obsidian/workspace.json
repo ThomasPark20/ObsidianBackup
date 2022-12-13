@@ -24,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350 Virtual Memory.md",
+                "file": "Zettelkasten/CS350 Scheduling.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Virtual Memory.md",
+                "file": "Zettelkasten/CS350 Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,8 +129,8 @@
   },
   "active": "aab64917207c93e4",
   "lastOpenFiles": [
-    "Zettelkasten/Untitled.md",
     "Zettelkasten/CS350 Virtual Memory.md",
+    "Zettelkasten/Untitled.md",
     "Zettelkasten/Diamond Model.md",
     "Zettelkasten/CS350A2aGuide.md",
     "Zettelkasten/CS350 Synchronization.md",
