@@ -56,14 +56,22 @@ common operations
 	- open("/docs/a.txt", "O_CREAT|O_TRUNC")
 		- opens file and creates a hardlink to that file in the directory /docs
 	- link("/docs/a.txt", "/foo/myA")
-		- creat
+		- creates a new hardlink myA in directoy /foo
+		- link refers to the i-number of file /docs/a.txt which must exist
+		- CANNOT LINK DIREC TO AVOID CYCLING
+![[Pasted image 20221214014120.png]]
 
+==File is deleted when its last hard link is removed and the count of the number of hard links maintained by kernel becomes zero.==
+- softlink
+	- symlink(/z/a, /y/k/m) creates symlink m in directory /y/k
+	- If we open /y/k/m
+		- recognize /y/k/m as symlink
+		- attempt to open /z/a instead
+	- ==referential integrity not preserved==
+		- /z/a need not exist. (It wiill create error tho)
+![[Pasted image 20221214014416.png]]
 
-
-
-
-
-
+### Multiple File Systems
 
 
 
