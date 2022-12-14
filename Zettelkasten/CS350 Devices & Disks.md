@@ -79,7 +79,31 @@ tags: #pages
 
 ### HDDDDDDDD
 - array of numbered blocks (sectors)
+	- Blocks are same size (512 bytes typical)
+
+#### formula
+1 to 4 platters
+	2 surfaces per platter
+		split into circles called tracks
+			each track broken into sectors (blocks)
+
+#### Cost model
+1. seek time
+	- Most dominant cost
+	- time it takes read/write head to the appropriate ==track==
+2. roational latency
+	- time it takes for desired sectors to spin to the read/write heads
+3. transfer time
+	- time it takes until desired sectors spin past the read/write heads
+==Request Service Time==
+- SEEK TIME + ROTATION LATENCY + TRANSFER TIME
+
+#### Some examples
+
+Params
+- Disk capa: 2^32 bytes
 - 
+
 
 
 ## Summary
