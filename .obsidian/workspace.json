@@ -24,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350 Scheduling.md",
+                "file": "Zettelkasten/CS350 Devices.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Scheduling.md",
+                "file": "Zettelkasten/CS350 Devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,12 +129,12 @@
   },
   "active": "aab64917207c93e4",
   "lastOpenFiles": [
+    "Zettelkasten/CS350 Scheduling.md",
     "Zettelkasten/CS350 Threads.md",
     "Zettelkasten/CS350 Virtual Memory.md",
     "Files/CS350synchro4.png",
     "Files/Intrusion_Kill_Chain_-_v2 2.png",
     "Files/CFS.png",
-    "Zettelkasten/CS350 Scheduling.md",
     "Zettelkasten/Untitled.md",
     "Zettelkasten/Diamond Model.md",
     "Zettelkasten/CS350A2aGuide.md",
