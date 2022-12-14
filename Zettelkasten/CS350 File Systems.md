@@ -220,11 +220,12 @@ If hardlink was 0,
 - VSFS uses per-file index (direct and indirect pointers) to access blocks
 - Two alterative approaches
 	- Chaining![[Pasted image 20221214070517.png]]
-		- Directory table contains the name of the file, and each file's startign block
+		- Directory table contains the name of the file, and each file's STARTING block
 		- Acceptable for sequential access, very slow for random access
-			- 
+			- if a file had 3 blocks, we have to read all 3 blocks to access the last block... imagine if we wanted to access last blocks of 100 files. 
 	- External Chaining![[Pasted image 20221214070538.png]]
 		- speical file access table that specifies all of the file chains
+			- instead of  reading actual files, we read smaller data structure that tells us the required info to find desired 
 
 ### File System Design
 - File system params:
@@ -239,6 +240,11 @@ If hardlink was 0,
 
 ### Faults and Failures
 - special-purpose consistency checkers (fsck, etc)
-	- runs after a crash
+	- runs after a crash, before normal ops resume
+	- find and attempt to repair inconsistent file system data structures
+- journaling, write-ahead logging
+	- record file system meta-data changes in journal in sequence
+	- UPDATE only AFTER journaling (write-ahead logging)
+	- after failure, redo journaled updates.
 
 ## Summary
