@@ -16,6 +16,9 @@ tags: #pages #CS350 #OS #kernel
 - have associated meta-data (owner, date created, date modified etc)
 
 ### File Systems
+Why the separation?
+	1. Security. If a user program can directly access data, user may be able to bypass permissions
+	2. Good abstract design. The OS can change the implementation or hardware without affecting user program
 1. logical file system (top layer)
 	- (fopen, fprintf, etc)
 	- Manages file system information (which files are open for read/write)
