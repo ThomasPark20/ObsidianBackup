@@ -225,7 +225,7 @@ If hardlink was 0,
 			- if a file had 3 blocks, we have to read all 3 blocks to access the last block... imagine if we wanted to access last blocks of 100 files. 
 	- External Chaining![[Pasted image 20221214070538.png]]
 		- speical file access table that specifies all of the file chains
-			- instead of  reading actual files, we read smaller data structure that tells us the required info to find desired 
+			- instead of seq reading actual files, we read smaller data structure that tells us the required info to find desired block of data.
 
 ### File System Design
 - File system params:
