@@ -160,6 +160,25 @@ If V = 40 -> 2^40, page size = 4KB = 2^12, and PTE size 4 bytes...
 	- Thus top page table (==directory==) must hold 2^18 references to page tables
 	- requires 2^18(# references) x 2^2 (PTE size) = 2^20 or 1MB of space
 
+More formulas:
+how many levels?
+- ceil((Vbit - offset bit) / (page table bit))
+How many table exist each level, how many valid entries each table and per level?
+- 64 bit. 1 -> 12; 2,3 -> 15; offset = 20
+- Process uses bytes 2^58 - 1.
+	- Level 3
+		- valid entries per level -> 2^58 / 2^20 = 2^38
+		- valid per table -> min(2^L3bits, valid per level) -> 2^16
+		- Num table -> 2^38 / 2^16 = 2^22
+	- Level 2
+		- 2^22
+		- 2^16
+		- 2^6
+	- level 1
+		- 2^6
+		- 2^6
+		- 1
+
 ### Kernel vs MMU
 - Kernel (software)
 	- manages MMU on address space switches
