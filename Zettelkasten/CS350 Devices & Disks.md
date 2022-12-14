@@ -125,8 +125,34 @@ e) AVG rotational latency?
 f) What is the cost to transfer 1 sector? (==transfer== meaning track was already found) (This is actually asking for transfertime)
 - MAX ROT / Num sectors track = 6 / 2^8 = 6 / 256 = 0.0195 ms per sector
 
-g) expected cost to read 10 consecutive sectors?
-- 
+g) expected cost to read 10 consecutive sectors? (expected -> avg like stat)
+- AVG SEEK + AVG ROT + 10(TRANSFER TIME) = 10 + 3 + 10(0.0195) = 13.195ms
+
+#### Performance characteristics
+- Larger tranfers (many blocks) more efficient
+	- cost per byte is smaller
+		- because the time it takes to get there is amortized over many blocks of data
+- Sequential I/O faster than non-sequential I/O
+	- Eliminate seek time!
+
+
+#### Disk Head Scheduling
+
+- Goal: reduce seek time.
+
+##### FCFS
+- fair and simple, no optimization
+
+##### SSTF (Shortest Seek Time First)
+- Seek time reduced, STARVATION exists
+
+##### SCAN (Elevator)
+- moves in one direction until no more request in front of it, then reverse
+- Seek time reduced (relative to FCFS), NO starvation
+
+
+#### Disk Controller driver
+![[Pasted image 20221214000532.png]]
 
 
 
