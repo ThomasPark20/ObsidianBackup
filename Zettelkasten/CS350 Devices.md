@@ -26,7 +26,32 @@ tags: #pages
 ![[clock.png]]
 ![[serial.png]]
 
+### Device Driver
 
+1. ==Polling==
+	- Repeat (Poll) for completion
+	- 
+	 ```
+	 P(output device write semaphore)
+	 write character to device data register
+	 repeat {
+		 read writeIRQ register
+	 } until status complete
+	 clear Write IRQ
+	 V(output device write semaphore)
+	```
+2. ==Interrupts==
+	- No repeat (poll)
+	- 
+```
+	P(output device write semaphore)
+	write character to device data register
+	(interrupt after completion)
+
+	#Interrupt Handler
+	Clear Write IRQ
+	V(output device write semaphore)
+```
 
 
 
