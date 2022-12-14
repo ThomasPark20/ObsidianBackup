@@ -42,6 +42,7 @@ common operations
 		- enables non-sequential reading/writing
 		- changes the ==file position== associated with a descriptor.
 			- next read/write will use this new position
+		- doesn't validate the bit. can set bit wayyyy off. Won't get error until read/write
 
 ### Directories and i-numbers
 
