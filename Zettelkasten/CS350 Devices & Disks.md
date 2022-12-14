@@ -128,6 +128,8 @@ f) What is the cost to transfer 1 sector? (==transfer== meaning track was alread
 g) expected cost to read 10 consecutive sectors? (expected -> avg like stat)
 - AVG SEEK + AVG ROT + 10(TRANSFER TIME) = 10 + 3 + 10(0.0195) = 13.195ms
 
+h) 
+
 #### Performance characteristics
 - Larger tranfers (many blocks) more efficient
 	- cost per byte is smaller
