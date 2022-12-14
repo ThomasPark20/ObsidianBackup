@@ -31,7 +31,32 @@ common operations
 	- returns a ==file descriptor== 
 		- has bunch of parameters which other file operations use
 - close
-	- in
+	- invalidates a valid ==file descriptor==
+	- kernel tracks which file descriptors are currently valid for EACH process
+- read, write, seek
+	- read
+		- copies data from file in to a virtual address space
+	- write
+		- copies data from a virtual addresss space into a file
+	- seek
+		- enables non-sequential reading/writing
+		- changes the ==file position== associated with a descriptor.
+			- next read/write will use this new position
+
+### Directories and i-numbers
+
+- A directory maps file names to ==i-numbers==
+	- ==i-numbers== are unique index numbers which file system uses to locate files
+- 
+
+
+
+
+
+
+
+
+
 
 
 ## Summary
