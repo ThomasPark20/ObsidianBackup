@@ -199,7 +199,20 @@ V(disk_completion)
 	- due to high voltage required to 0 -> 1
 	- can only apply high voltage at block level
 
+#### Writing and Deleting
+- Naive solution (SLOW)
+	- read whole block
+	- re-initialize block
+	- update block in RAM and write back to SSD
+- SSD controller handles requests (faster)
+	- page to be deleted/overwritten is marked as invalid (not del lmao)
+	- write to an unused page
+	- update translation table
+	- requires garbo collection (use naive)
 
+#### Limitations of SSD
+- Each block has a limited number of write cycles before it becomes read-only
+- SSD controllers perform wear leveling, distributing writes evenly
 
 
 ## Summary
