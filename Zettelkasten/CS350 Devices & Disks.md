@@ -149,11 +149,51 @@ g) expected cost to read 10 consecutive sectors? (expected -> avg like stat)
 ##### SCAN (Elevator)
 - moves in one direction until no more request in front of it, then reverse
 - Seek time reduced (relative to FCFS), NO starvation
-
-
 #### Disk Controller driver
-![[Pasted image 20221214000532.png]]
+![[discon.png]]
+
+- Constraints
+	- OS/161 allow one thread at a time to access disk
+	- OS/161 thread that initiates a write/read should wait until that write/read is completed
+
+##### Write
+```c
+// allow only one disk request at a time
+P(disk)
+copy data from RAM to device transfer buffer
+write target sector number to sector number register
+write write command to the status register
+// wait for request to complete
+P(disk_completion)
+// when completed
+V(disk)
+
+// Interrupt hander for Disk Device
+write disk status register to ack completion
+V(disk_completion)
+```
+
+##### Read
+```c
+// allow only one disk request at a time
+P(disk)
+write target sector number to sector number register
+write read command to the status register
+// wait for request to complete
+P(disk_completion)
+copy data from device transfer buffer to RAM
+// when completed
+V(disk)
+
+// Interrupt hander for Disk Device
+write disk status register to ack completion
+V(disk_completion)
+```
 
 
+### SSD and flash
+- no disk only integrated circuits
+
+- read/
 
 ## Summary
