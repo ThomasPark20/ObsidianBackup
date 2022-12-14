@@ -1,6 +1,6 @@
 2022-12-13 17:47
 source: [source]()
-tags: #pages
+tags: #pages #CS350 #OS #kernel 
 
 
 # CS350 Scheduling
