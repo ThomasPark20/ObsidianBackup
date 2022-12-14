@@ -191,8 +191,15 @@ Create (6 reads, 10 disk I/O)
 
 Write (2 reads)
 1. read bar inode (we already know where this is as we created right before this)
-	- check if we need direct single or double t
-2. read data bitmap
+	- check if we need direct single or double pointers etc
+	- we know that no data yet for this inode
+2. read data bitmap (find space)
+3. write data bitmap (get space)
+4. write bar data
+5. write bar inode (filesize, pointers, mtime)
+
+If new write 49KB, we need 12 direc and 1 indirec
+
 
 
 
