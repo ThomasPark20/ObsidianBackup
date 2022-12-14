@@ -112,13 +112,29 @@ How do we present multiple filesystems to logical filesystem as one?
 		- inodes (max 80) -> one per file
 			- contains 
 				- i number
-				- permission
+				- file permission
+				- file type
+				- file length
 				- modification table
 				- etc
 		- basically page table for where in data can I find this file
 
-Need to know which i-nodes and data are unused
+Need to know which i-nodes and blocks are unused
 ==searching i-node array is linear time and slow==
 We use bitmap for this.
+- 2 blocks for i and d bitmap
+	- block size of 4KB means 32K i-nodes and 32K blocks trackable
+
+- first block is superblock
+	- contains meta-info about entire file system
+		- how many i-nodes and blocks, where i-node table begins etc
+![[Pasted image 20221214015808.png]]
+
+### i-node and its damned pointers
+![[Pasted image 20221214015946.png]]
+
+
+
+
 
 ## Summary
