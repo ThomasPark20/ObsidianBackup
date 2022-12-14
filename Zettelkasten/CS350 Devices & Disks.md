@@ -194,6 +194,12 @@ V(disk_completion)
 ### SSD and flash
 - no disk only integrated circuits
 
-- read/
+- read/write at page level
+- overwrite/delete at block level
+	- due to high voltage required to 0 -> 1
+	- can only apply high voltage at block level
+
+
+
 
 ## Summary
