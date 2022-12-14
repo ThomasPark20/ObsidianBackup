@@ -157,19 +157,31 @@ i-node is 256 bytes
 		- \[12(direct) + 1024(single) + 1024 * 1024 (double) + 1024^3 (triple)\] * 4kb
 
 Example:
-Read /foo/bar
+Open & Read /foo/bar
 
+Open
 1. root inode read
 2. root data read (lookup i number for foo)
 3. foo inode read
 4. foo data read (lookup i number for bar)
-5. bar inode read
+5. bar inode read 
 	- permission checked
 	- file descriptor returned and added to processes's file descriptor table
 	- file is added to kernel's list of open files
-6. bar inode read again
-	- find 
-7. bar inode write (atime)
+
+Read
+1. bar inode read again
+	- find pointer to correct data block to read (after checking file descriptor for where to read and how much to read)
+2. read bar data
+3. bar inode write (atime)
+
+Creating a File /foo/bar
+
+1. root inode read
+2. root data read
+3. foo inode read
+4. foo data read
+5. 
 
 
 
