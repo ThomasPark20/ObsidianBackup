@@ -111,13 +111,14 @@ How do we present multiple filesystems to logical filesystem as one?
 	- data block is not shared by files
 - first 8 blocks metadata.
 	- 5 blocks for i-node array
-		- inodes (max 80) -> one per file
+		- inodes (max 80) -> one per file (256 bytes)
 			- contains 
 				- i number
 				- file permission
 				- file type
 				- file length
 				- modification table
+				- those damned pointers
 				- etc
 		- basically page table for where in data can I find this file
 
