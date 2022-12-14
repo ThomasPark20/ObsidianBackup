@@ -47,7 +47,16 @@ common operations
 
 - A directory maps file names to ==i-numbers==
 	- ==i-numbers== are unique index numbers which file system uses to locate files
-- 
+- Q: Only the kernel is permitted to directly edit directories. Why?
+- A: ==Kernel should not trust the user with direct access to data structures that the kernel relies on==
+
+### Links
+- hardlink
+	- association between a name (string) and an i-number
+	- open("/docs/a.txt", "O_CREAT|O_TRUNC")
+		- opens file and creates a hardlink to that file in the directory /docs
+	- link("/docs/a.txt", "/foo/myA")
+		- creat
 
 
 
