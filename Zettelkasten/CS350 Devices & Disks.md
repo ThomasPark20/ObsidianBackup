@@ -122,8 +122,11 @@ d) What is the average seek time?
 e) AVG rotational latency?
 - Max ROT / 2 = 3ms avg rot lat
 
-f) What is the cost to transfer 1 sector?
-- MAX LAT
+f) What is the cost to transfer 1 sector? (==transfer== meaning track was already found) (This is actually asking for transfertime)
+- MAX ROT / Num sectors track = 6 / 2^8 = 6 / 256 = 0.0195 ms per sector
+
+g) expected cost to read 10 consecutive sectors?
+- 
 
 
 
