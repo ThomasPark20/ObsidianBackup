@@ -78,8 +78,8 @@ tags: #pages
 
 
 ### HDDDDDDDD
-
-
+- array of numbered blocks (sectors)
+- 
 
 
 ## Summary
