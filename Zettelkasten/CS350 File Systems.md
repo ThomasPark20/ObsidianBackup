@@ -72,8 +72,31 @@ common operations
 ![[Pasted image 20221214014416.png]]
 
 ### Multiple File Systems
+virtual file sys.
+How do we present multiple filesystems to logical filesystem as one?
 
+- DOS/Windows -> use two part file names
+	- ==C:== \\user\\cs350\\schedule.txt
+- Unix -> create single hierarchical namespace
+	- Unix mount system call
+		- does not actually make two in one. merely creates a namespace that combines namespace
+![[Pasted image 20221214014844.png]]
 
+### Implementation
+- What nees to be stored persistently?
+	- file data
+	- file meta-data
+	- directories and links
+	- file system meta-data
+- non-persistent (may be around if hibernation (not OS/161))
+	- per process open file descriptor table
+		- file handle
+		- file position
+	- system wide
+		- open file table
+		- cached copies of persistent data
 
+### Example
+- 256KB 
 
 ## Summary
