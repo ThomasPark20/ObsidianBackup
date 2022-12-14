@@ -66,7 +66,16 @@ tags: #pages
 	- Each device register has a physical memory address
 	- devices read write from these devices registers as if accessing memory
 	- Supports more devices due to lack of special operations
-	- SLOW as all devices must d
+	- SLOW as all devices must decode all instr that comes from mainbus to check if its for them... SLOW
+### LARGE data transfer
+1. Program-controlled I/O (PIO)
+	- Device driver moves data between mem and buffer of device
+	- USES CPU
+2. Direct memory access (DMA)
+	- Device it self moves data to/from mem
+	- NO CPU
+	- Used for block data transfers between devices (i.e. disk controller and primary memory)
+
 
 
 
