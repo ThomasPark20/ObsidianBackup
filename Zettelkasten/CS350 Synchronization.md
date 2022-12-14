@@ -463,6 +463,8 @@ The threads are ==**deadlocked**==, i.e. neither can make progress. They are ==*
 
 #### Deadlock Prevention
 1. ==**No Hold and Wait**==: ==*prevent a thread from requesting resources== if it currently has resources allocated to it*.... A thread may hold several resources, but must obtain them all at once. 
+		- pros -> no deadlock
+		- cons -> threads spin to acquire locks
 ```c
 lock_acquire(lock1); // try get both locks
 while(!try_acquire(lock2)) {
