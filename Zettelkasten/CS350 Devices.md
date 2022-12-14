@@ -9,8 +9,18 @@ tags: #pages
 
 ## Details
 
+### Kind of Device
+- keyboard -> input
+- printer -> output
+- touch screen -> both
 
+### Bussin
+- internal bus (memory bus) -> cpu and ram communication. fast
+- peripheral bus (expansion bus) -> devices communication
+- bridge -> connects two busses.
 
+### Registers
+- status -> device's current
 
 
 
