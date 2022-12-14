@@ -159,7 +159,7 @@ i-node is 256 bytes
 Example:
 Open & Read /foo/bar
 
-Open
+Open (5 reads)
 1. root inode read
 2. root data read (lookup i number for foo)
 3. foo inode read
@@ -169,19 +169,30 @@ Open
 	- file descriptor returned and added to processes's file descriptor table
 	- file is added to kernel's list of open files
 
-Read
+Read (2 reads)
 1. bar inode read again
 	- find pointer to correct data block to read (after checking file descriptor for where to read and how much to read)
 2. read bar data
 3. bar inode write (atime)
 
-Creating a File /foo/bar
+Create & Write /foo/bar
 
+Create (6 reads, 10 disk I/O)
 1. root inode read
 2. root data read
 3. foo inode read
-4. foo data read
-5. 
+4. foo data read (no bar)
+5. inode bitmap read
+6. inode bitmap write (0 -> 1 for a new i number)
+7. foo data write (hardlink new inumber)
+8. bar inode read (as we have to read entire block to access this small inode)
+9. bar inode write (new inode stuff: permissions, type, pointers init etc)
+10. foo inode write (mtime ==modification== time!!)
+
+Write (2 reads)
+1. read bar inode (we already know where this is as we created right before this)
+	- check if we need direct single or double t
+2. read data bitmap
 
 
 
