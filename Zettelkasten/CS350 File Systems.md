@@ -108,6 +108,7 @@ How do we present multiple filesystems to logical filesystem as one?
 
 ### VSFS
 - last 56 blocks is data.
+	- data block is not shared by files
 - first 8 blocks metadata.
 	- 5 blocks for i-node array
 		- inodes (max 80) -> one per file
@@ -120,9 +121,9 @@ How do we present multiple filesystems to logical filesystem as one?
 				- etc
 		- basically page table for where in data can I find this file
 
-Need to know which i-nodes and blocks are unused
+Need to know which i-nodes and blocks are unused to create new file
 ==searching i-node array is linear time and slow==
-We use bitmap for this.
+We use bitmap for this. (still linear search, but cheaper to read in binary int)
 - 2 blocks for i and d bitmap
 	- block size of 4KB means 32K i-nodes and 32K blocks trackable
 
