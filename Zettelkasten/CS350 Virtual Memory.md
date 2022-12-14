@@ -61,6 +61,7 @@ Example:
 		- process needs 100MB. 
 		- Even though free, not contiguous. cannot assign
 - In the end it allows ==multiple processes to share RAM== and ==isolates each process's address space==, but it ==does not use phys mem efficiently==
+	- large amounts of wasted space for sparse-layout address spaces which results in lower-degree of multiprocessing due to large size address spaces.
 
 ### Segmentation
 
@@ -96,7 +97,7 @@ Example:
 	- 0x38000 + 0x1240 = 0x39240
 #### Approach 2
 - we now have a table.
-- ![[SegmentedAddressTranslationB.png]]
+- MMU Now has Seg table base reg and len reg![[SegmentedAddressTranslationB.png]]
 - 0x00002004 -> 0000 0000 0000 0000 0010 0000 0000 0100
 - seg num = 0x0
 - offset = 0x 000 0000 0000 0010 0000 0000 0100
@@ -331,6 +332,11 @@ What do we need?:
 			- set by MMU each time the page is used.
 			- read and ==cleared== by the kernel.
 - Clock Algorithm
+	- a) detected on TLB miss when TLB is full
+	- b) if potential victim has use bit 1, reset to 0 and iterate to next victim
+	- c) If use bit 0, remove entry from TLB and bring in new address translation
+	- d) set the PC to re-execute the instruction
+	- e) return from exception
 ```python
 while (use bit of victim is set) {
 	clear use bit of victim # 2nd chance
