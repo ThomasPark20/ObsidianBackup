@@ -207,6 +207,30 @@ Delete (may be incorrect) /foo/bar
 3. foo inode read
 4. foo data read
 5. bar inode read
-6. bar inode write (decrement hardlink counter. If hardlink 0,)
+6. bar inode write (decrement hardlink counter.)
+
+If hardlink was 0,
+7. data bitmap read
+8. data bitmap write (1 -> 0)
+9. inode bitmap read
+10. inode bitmap write (1-> 0)
+
+
+### Chaining
+- VSFS uses per-file index (direct and indirect pointers) to access blocks
+- Two alterative approaches
+	- Chaining![[Pasted image 20221214070517.png]]
+		- Directory table contains the name of the file, and each file's startign block
+		- Acceptable for sequential access, very slow for random access
+			- 
+	- External Chaining![[Pasted image 20221214070538.png]]
+		- speical file access table that specifies all of the file chains
+
+### File System Design
+- File system params:
+	- How many i-nodes should a file system have?
+	- How many direct and indirect blocks should an i-node have?
+	- What is right block size?
+- For general purpose fs, design it to be efficient for the common case
 
 ## Summary
