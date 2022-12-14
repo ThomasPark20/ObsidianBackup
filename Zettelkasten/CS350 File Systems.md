@@ -146,7 +146,14 @@ i-node is 256 bytes
 - points to a block full of direct pointers (these eat up data space)
 - 4 KB block of direct pointers = 2^12 / 2^2 (size of pointer) = 2^10 = 1024 pointers
 - Thus, as we have 12 direct and 1 indirect that points to block full of direct pointers,
-	- max file size -> (12+1024) **
+	- max file size -> (12+1024) * 4kb = 4144 kb
+- double, triple
+	- points to a 4KB block o single indirect pointers 
+		- \[12(direct) + 1024(single) + 1024 * 1024 (double)\] * 4kb
+	- points to a 4KB block of double indirect pointers
+		- \[12(direct) + 1024(single) + 1024 * 1024 (double) + 1024^3 (triple)\] * 4kb
+
+
 
 
 
