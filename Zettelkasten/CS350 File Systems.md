@@ -233,5 +233,12 @@ If hardlink was 0,
 	- What is right block size?
 - For general purpose fs, design it to be efficient for the common case
 	- most files are small, 2kb
+	- average file size growing
+	- on average 100 thousand files
+	- typically small direcs
+
+### Faults and Failures
+- special-purpose consistency checkers (fsck, etc)
+	- runs after a crash
 
 ## Summary
