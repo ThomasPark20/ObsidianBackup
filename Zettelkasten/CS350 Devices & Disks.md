@@ -102,7 +102,28 @@ tags: #pages
 
 Params
 - Disk capa: 2^32 bytes
-- 
+- Num of Tracks: 2^20 tracks
+- Num sectors track: 2^8 sectors
+- RPM: 10000
+- MAX SEEK: 20 ms
+
+a) How may bytes per track?
+- Disk capa / Num of Track -> 2^12 bytes
+
+b) How many bytes in sector?
+- Bytes per track / Num sectors track = 2^4 bytes
+
+c) Max rotational latency?
+- 60 / RPM = 0.006 or 6 ms
+
+d) What is the average seek time?
+- Max SEEk / 2 = 10 ms avg seek time
+
+e) AVG rotational latency?
+- Max ROT / 2 = 3ms avg rot lat
+
+f) What is the cost to transfer 1 sector?
+- MAX LAT
 
 
 
