@@ -216,3 +216,5 @@ V(disk_completion)
 
 
 ## Summary
+![[Pasted image 20221214002124.png]]
+![[Pasted image 20221214002136.png]]![[Pasted image 20221214002147.png]]
