@@ -96,7 +96,29 @@ How do we present multiple filesystems to logical filesystem as one?
 		- open file table
 		- cached copies of persistent data
 
-### Example
-- 256KB 
+### Example Disk
+- 256KB disk
+- sector 512 bytes
+- block -> 8 sectors -> 4KB block
+	- ==better spatial locality==
+	- ==Reduces number of block pointers==
+	- ==4 KB is convenient size for paging==
+- 64 total blocks on disk
+
+### VSFS
+- last 56 blocks is data.
+- first 8 blocks metadata.
+	- 5 blocks for i-node array
+		- inodes (max 80) -> one per file
+			- contains 
+				- i number
+				- permission
+				- modification table
+				- etc
+		- basically page table for where in data can I find this file
+
+Need to know which i-nodes and data are unused
+==searching i-node array is linear time and slow==
+We use bitmap for this.
 
 ## Summary
