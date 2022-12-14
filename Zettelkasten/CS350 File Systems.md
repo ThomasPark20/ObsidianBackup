@@ -133,7 +133,20 @@ We use bitmap for this.
 ### i-node and its damned pointers
 ![[Pasted image 20221214015946.png]]
 
+Assume disk blocks can be referenced based on 4 byte address (32bits)
+- 2^32 blocks, 4KB sized blocks
+- max disk size is 16TB
 
+i-node is 256 bytes
+- 12 direct pointers only
+	- 12 * 4 kb = 48 kb is max size
+	- oK so how get more size?
+
+#### Indirect Pointers
+- points to a block full of direct pointers (these eat up data space)
+- 4 KB block of direct pointers = 2^12 / 2^2 (size of pointer) = 2^10 = 1024 pointers
+- Thus, as we have 12 direct and 1 indirect that points to block full of direct pointers,
+	- max file size -> (12+1024) **
 
 
 
