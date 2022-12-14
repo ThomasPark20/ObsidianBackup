@@ -201,6 +201,12 @@ Write (2 reads)
 If new write 49KB, we need 12 direc and 1 indirec
 
 
-
+Delete (may be incorrect) /foo/bar
+1. root inode read
+2. root data read
+3. foo inode read
+4. foo data read
+5. bar inode read
+6. bar inode write (decrement hardlink counter. If hardlink 0,)
 
 ## Summary
