@@ -24,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350 Synchronization.md",
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 Synchronization.md",
+                "file": "Zettelkasten/CS350 Virtual Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,11 +127,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "d3026ffb9dd78afb",
+  "active": "aab64917207c93e4",
   "lastOpenFiles": [
+    "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/CS350 File Systems.md",
     "Zettelkasten/CS350 Intro to OS.md",
-    "Zettelkasten/CS350 Synchronization.md",
     "Zettelkasten/CS350 Scheduling.md",
     "Zettelkasten/CS350 Processeses.md",
     "Zettelkasten/CS350 Devices & Disks.md",
