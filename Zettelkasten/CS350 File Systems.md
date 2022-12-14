@@ -232,5 +232,6 @@ If hardlink was 0,
 	- How many direct and indirect blocks should an i-node have?
 	- What is right block size?
 - For general purpose fs, design it to be efficient for the common case
+	- most files are small, 2kb
 
 ## Summary
