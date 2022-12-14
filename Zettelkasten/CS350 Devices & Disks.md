@@ -3,7 +3,7 @@ source: [source]()
 tags: #pages
 
 
-# CS350 Devices
+# CS350 Devices & Disks
 
 
 
@@ -75,6 +75,9 @@ tags: #pages
 	- Device it self moves data to/from mem
 	- NO CPU
 	- Used for block data transfers between devices (i.e. disk controller and primary memory)
+
+
+### HDDDDDDDD
 
 
 
