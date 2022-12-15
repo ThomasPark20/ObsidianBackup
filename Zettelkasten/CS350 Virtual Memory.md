@@ -61,7 +61,7 @@ Example:
 		- process needs 100MB. 
 		- Even though free, not contiguous. cannot assign
 - In the end it allows ==multiple processes to share RAM== and ==isolates each process's address space==, but it ==does not use phys mem efficiently==
-	- large amounts of wasted space for sparse-layout address spaces which results in lower-degree of multiprocessing due to large size address spaces.
+	- large amounts of wasted space results in less effeciency due to large size address spaces.
 
 ### Segmentation
 
