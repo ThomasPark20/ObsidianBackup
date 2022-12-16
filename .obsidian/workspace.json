@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/CS350 File Systems.md",
-                "mode": "source",
+                "file": "Zettelkasten/CS350 Synchronization.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/CS350 File Systems.md",
+                "file": "Zettelkasten/CS350 Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,17 +114,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d3026ffb9dd78afb",
+  "active": "2da95be997f7e858",
   "lastOpenFiles": [
+    "Zettelkasten/CS350 Threads.md",
+    "Zettelkasten/CS350 Intro to OS.md",
+    "Zettelkasten/CS350 File Systems.md",
     "Zettelkasten/CS350 Virtual Memory.md",
     "Zettelkasten/Pasted image 20221124162158.png.md",
     "Files/Addrspacebitsconversion.png",
     "Files/addrspace.png",
     "Zettelkasten/tempraymondtipfrench.md",
     "Zettelkasten/French Alphabets.md",
-    "Zettelkasten/French Pronunciation Rules.md",
-    "Zettelkasten/9 principles of Sherman Kent’s analytic doctrine.md",
-    "Zettelkasten/CS350 Synchronization.md",
-    "Zettelkasten/CS350 Threads.md"
+    "Zettelkasten/French Pronunciation Rules.md"
   ]
 }
