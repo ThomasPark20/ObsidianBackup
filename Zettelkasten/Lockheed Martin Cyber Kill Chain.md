@@ -8,9 +8,10 @@ tags: #pages #cti #cybersec
 
 ## Overview
 Structural map of adversary intrusion.
-
+- Structure in "chains" or "stages" where disruption or mitigation of one stage disrupts the structure and the adversary's campaign.
 
 ## Details
 
 
-## Summary
+
+
