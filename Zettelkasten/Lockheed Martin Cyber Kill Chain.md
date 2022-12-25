@@ -12,6 +12,8 @@ Structural map of adversary intrusion.
 
 ## Details
 
-
+#### Indicators and Indicator Life Cycle
+- Atomic 
+	- cannot be broken down into smaller 
 
 
