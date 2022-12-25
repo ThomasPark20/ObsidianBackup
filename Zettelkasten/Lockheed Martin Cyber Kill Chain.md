@@ -21,10 +21,10 @@ Structural map of adversary intrusion.
 ==derived from data involved in an incident==
 	- hash values
 	- regex
-- Behavioral
+- **Behavioral**
 ==collections of computed and atomic indicators==
-	- "intruder would initially use a backdoor which generated network traffic matching \[regex\] at the rate of \[some frequency\] to \[some IP address\], and then replace it with one matching the MD5 ha"
+	- "intruder would initially use a backdoor which generated network traffic matching \[regex\] at the rate of \[some frequency\] to \[some IP address\], and then replace it with one matching the MD5 hash \[value\] once access was established"
+![[IndicatorLifeCycle.png]]
 
-
-
+Revealed -> (leveraged by using the indicator) -> Mature -> (matching activity discovered) -> Utilized -> (Analyze)
 
