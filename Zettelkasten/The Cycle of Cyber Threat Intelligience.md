@@ -57,7 +57,7 @@ tags: #research #cti #cybersec
 ## Processing and Exploitation
 
 1. Structered Models: Data into Buckets (AWN literally uses S3 buckets to separate data)
-	- Some examples: Kill Chain, Diamond Model, MITRE ATT&CK, VERIS
+	- Some examples: [[Lockheed Martin Cyber Kill Chain]], [[Diamond Model]], MITRE ATT&CK, VERIS
 	- [[Diamond Model]] ([[TTP]]) ([Diamond Model White Paper](https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf))
 		- ![[TheDiamondModel.png]]
 	- [MITRE ATT&CK](https://attack.mitre.org/matrices/enterprise/)
