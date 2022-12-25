@@ -13,7 +13,18 @@ Structural map of adversary intrusion.
 ## Details
 
 #### Indicators and Indicator Life Cycle
-- Atomic 
-	- cannot be broken down into smaller 
+- **Atomic**
+==cannot be broken down into smaller==
+	-  IP addresses
+	- email addresses
+- **Computed**
+==derived from data involved in an incident==
+	- hash values
+	- regex
+- Behavioral
+==collections of computed and atomic indicators==
+	- "intruder would initially use a backdoor which generated network traffic matching \[regex\] at the rate of \[some frequency\] to \[some IP address\], and then replace it with one matching the MD5 ha"
+
+
 
 
