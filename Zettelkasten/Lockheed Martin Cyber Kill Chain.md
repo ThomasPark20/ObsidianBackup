@@ -7,6 +7,7 @@ tags: #pages #cti #cybersec
 
 
 ## Overview
+Structural map of adversary intrusion.
 
 
 ## Details
