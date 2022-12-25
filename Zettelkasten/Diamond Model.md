@@ -21,7 +21,7 @@ authors: Sergio Caltagirone, Andrew Pendergast, Christopher Betz (all Center for
 		- ==customer== -> entity that benefits from activity
 	- capability
 		- ==capacity== -> all the vulns and exposures that can be utlized regardless of victim
-		- ==adversary arsenal== -> advesary's complete set of capabilities
+		- ==adversary arsenal== -> adversary's complete set of capabilities
 	- infrastructure
 		- physical and/or logical comm structures the adversary uses to deliver and maintain the effects of capabilities
 		- ==Type 1== -> fully controlled or owned by adversary
