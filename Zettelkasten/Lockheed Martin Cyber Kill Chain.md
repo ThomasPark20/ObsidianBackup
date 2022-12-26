@@ -26,5 +26,7 @@ Structural map of adversary intrusion.
 	- "intruder would initially use a backdoor which generated network traffic matching \[regex\] at the rate of \[some frequency\] to \[some IP address\], and then replace it with one matching the MD5 hash \[value\] once access was established"
 ![[IndicatorLifeCycle.png]]
 
-Revealed -> (leveraged by using the indicator) -> Mature -> (matching activity discovered) -> Utilized -> (Analyze) 
+New Indicator Revealed -> (leveraged by using the indicator) -> Mature -> (matching activity discovered) -> Utilized -> (Analyze activity) -> New Indicator Revealed 
+
+#### Intrusion Kill Chain
 
